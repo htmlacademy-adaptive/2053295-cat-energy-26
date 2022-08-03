@@ -1,28 +1,50 @@
-@import "additional-card.scss";
-@import "additional-products.scss";
-@import "button.scss";
-@import "card-product.scss";
-@import "container.scss";
-@import "extra-gift.scss";
-@import "invite.scss";
-@import "living-example.scss";
-@import "main-catalog.scss";
-@import "main-container.scss";
-@import "main-form.scss";
-@import "main-index.scss";
-@import "map.scss";
-@import "menu.scss";
-@import "navigation.scss";
-@import "page-footer.scss";
-@import "page-header.scss";
-@import "product-description.scss";
-@import "products.scss";
-@import "program-form.scss";
-@import "program-selection.scss";
-@import "program-version.scss";
-@import "promo.scss";
-@import "show-more.scss";
-@import "slider.scss";
-@import "slider-control.scss";
-@import "social.scss";
-@import "visually-hidden.scss";
+@use "fonts.scss";
+@use "additional-card.scss";
+@use "additional-products.scss";
+@use "button.scss";
+@use "card-product.scss";
+@use "container.scss";
+@use "extra-gift.scss";
+@use "invite.scss";
+@use "living-example.scss";
+@use "main-catalog.scss";
+@use "main-container.scss";
+@use "main-form.scss";
+@use "main-index.scss";
+@use "map.scss";
+@use "menu.scss";
+@use "navigation.scss";
+@use "page-footer.scss";
+@use "page-header.scss";
+@use "product-description.scss";
+@use "products.scss";
+@use "program-form.scss";
+@use "program-selection.scss";
+@use "program-version.scss";
+@use "promo.scss";
+@use "show-more.scss";
+@use "slider.scss";
+@use "slider-control.scss";
+@use "social.scss";
+@use "visually-hidden.scss";
+
+
+
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  display: flex;
+  min-height: 100%;
+  margin: 0;
+  flex-direction: column;
+  font-family: "Oswald", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  background-color: #F2F2F2;
+}
