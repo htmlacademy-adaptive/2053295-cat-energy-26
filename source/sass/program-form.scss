@@ -1,0 +1,38 @@
+.program-form {}
+
+.program-form__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.program-form__item {
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.program-form__label {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.program-form__input {
+font-size: 16px;
+text-transform: uppercase;
+color: #444444;
+
+}
+
+.program-form__radio {}
+
+.program-form__legend {
+  font-size: 24px;
+line-height: 26px;
+color: #000000;
+}
+
+.program-form__textarea {}
+
+.program-form__checkbox {}
