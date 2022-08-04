@@ -1,0 +1,48 @@
+.additional-card {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3, auto);
+}
+
+.additional-card__link {
+  text-decoration: none;
+}
+
+.additional-card__title {
+  margin: 13px 0;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.additional-card__list {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 1fr;
+  width: 100%;
+  font-family: "Arial";
+  line-height: 14px;
+}
+
+.additional-card__term {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: right;
+}
+
+.additional-card__description {
+  margin: 0;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.additional-card__button {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}

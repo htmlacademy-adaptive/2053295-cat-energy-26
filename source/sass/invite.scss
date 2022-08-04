@@ -1,4 +1,8 @@
-.invite {}
+.invite {
+  &_tinted {
+    background-color: #F2F2F2;
+  }
+}
 
 .invite__container {
   display: flex;
@@ -19,10 +23,8 @@
 
 .invite__contacts {
   font-family: 'Arial';
-font-style: normal;
-line-height: 20px;
-color: #444444;
-width: calc(50% - 1px);
+  font-style: normal;
+  line-height: 20px;
+  color: #444444;
+  width: calc(50% - 1px);
 }
-
-.invite__map {}
