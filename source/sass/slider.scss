@@ -1,9 +1,8 @@
 .slider {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+overflow: hidden;
+}
+
   .slider__image {}
-}
-
-.slider-control {
-  .slider-control__button {}
-
-  .slider-control__range {}
-}
