@@ -1,3 +1,28 @@
-.invite {
-  background-color: #F2F2F2;
+.invite {}
+
+.invite__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 26px 0;
 }
+
+.invite__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 0;
+  width: calc(50% - 1px);
+}
+
+.invite__contacts {
+  font-family: 'Arial';
+font-style: normal;
+line-height: 20px;
+color: #444444;
+width: calc(50% - 1px);
+}
+
+.invite__map {}
