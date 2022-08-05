@@ -1,10 +1,12 @@
 @use "fonts.scss";
 @use "additional-card.scss";
 @use "additional-products.scss";
+@use "body.scss";
 @use "button.scss";
 @use "card-product.scss";
 @use "container.scss";
 @use "extra-gift.scss";
+@use "html.scss";
 @use "invite.scss";
 @use "living-example.scss";
 @use "main-catalog.scss";
@@ -32,20 +34,6 @@
 
 
 
-html {
-  height: 100%;
-}
 
-body {
-  position: relative;
-  display: flex;
-  min-height: 100%;
-  margin: 0;
-  flex-direction: column;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
-  background-color: #FFFFFF;
-}
+
+

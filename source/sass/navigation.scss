@@ -1,4 +1,5 @@
 .navigation {
+  position: relative;
   padding: 10px 0 18px;
 }
 
@@ -11,7 +12,11 @@
 
 .navigation__logo-image {}
 
-.navigation__button {}
+.navigation__button {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
 
 .navigation__menu {
   padding: 0;

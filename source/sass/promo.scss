@@ -3,8 +3,7 @@
 
   &:before {
     content: "";
-    background-image: url("../img/index-background.jpg"),
-      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
+    background-image: url("../img/index-background.jpg"), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
     background-blend-mode: overlay;
     position: absolute;
     left: 0;
@@ -29,7 +28,7 @@
   font-weight: inherit;
   font-size: 36px;
   line-height: 36px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 27px auto 25px;
   text-align: center;
 }
@@ -38,7 +37,7 @@
   margin: 0;
   line-height: 14px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   flex-grow: 1;
 }
@@ -56,13 +55,13 @@
 
 .promo__link {
   display: block;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  background-color: #68B738;
-  color: #FFFFFF;
+  background-color: #68b738;
+  color: #ffffff;
   padding: 7px 0;
   text-align: center;
   text-decoration: none;

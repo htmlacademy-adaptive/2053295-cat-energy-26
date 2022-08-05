@@ -11,11 +11,11 @@
 }
 
 .extra-gift__text {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 161px;
   padding-bottom: 43px;
 
@@ -30,6 +30,5 @@
     background-image: url("../img/icon_gift.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: 20;
   }
 }
