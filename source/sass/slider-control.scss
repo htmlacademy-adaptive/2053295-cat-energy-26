@@ -6,13 +6,13 @@
 }
 
 .slider-control__button {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: $most-black;
   border: none;
   padding: 5px 6px;
 }

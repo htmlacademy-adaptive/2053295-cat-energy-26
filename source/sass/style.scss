@@ -1,4 +1,5 @@
 @use "fonts.scss";
+@use "variables.scss";
 @use "additional-card.scss";
 @use "additional-products.scss";
 @use "body.scss";
@@ -12,13 +13,11 @@
 @use "main-catalog.scss";
 @use "main-container.scss";
 @use "main-form.scss";
-@use "main-index.scss";
 @use "map.scss";
 @use "menu.scss";
 @use "navigation.scss";
 @use "order-button.scss";
 @use "page-footer.scss";
-@use "page-header.scss";
 @use "product-description.scss";
 @use "products.scss";
 @use "program-form.scss";

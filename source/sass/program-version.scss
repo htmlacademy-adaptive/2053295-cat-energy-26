@@ -4,7 +4,7 @@
 }
 
 .program-version__item {
-  background-color: #f2f2f2;
+  background-color: $grey;
   list-style-type: none;
   margin-bottom: 20px;
   padding: 23px 23px 0;
@@ -20,7 +20,7 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  color: #000000;
+  color: $most-black;
   margin-bottom: 29px;
   padding-left: 80px;
 
@@ -49,7 +49,7 @@
 }
 
 .program-version__text {
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   margin-bottom: 23px;
 }
 
@@ -57,12 +57,12 @@
   display: block;
   position: relative;
   padding: 18px 0;
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid $light-grey;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
+  color: $most-black;
 
   &::after {
     content: "";

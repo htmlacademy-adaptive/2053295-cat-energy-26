@@ -1,52 +1,54 @@
 .living-example {
-  background-color: #eaeaea;
+  background-color: $dark-grey;
+}
 
-  .living-example__title {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 40px;
-    color: #000000;
-    margin-bottom: 40px;
-    padding-top: 25px;
-  }
+.living-example__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $most-black;
+  margin-bottom: 40px;
+  padding-top: 25px;
+}
 
-  .living-example__text {
-    font-family: "Arial", sans-serif;
-  }
+.living-example__text {
+  font-family: $arial;
+}
 
-  .living-example__inner {
-    display: flex;
-    justify-content: space-between;
-  }
+.living-example__inner {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .living-example__list {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    width: 124px;
-  }
+.living-example__list {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  width: 124px;
+}
 
-  .living-example__term {
-    font-size: 12px;
-    line-height: 12px;
-    text-align: center;
-    margin-bottom: 11px;
-  }
+.living-example__term {
+  font-family: $arial;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  margin-bottom: 11px;
+  color: $dark;
+}
 
-  .living-example__defenition {
-    margin: 0 0 8px;
-    font-size: 24px;
-    line-height: 24px;
-    color: #000000;
-  }
+.living-example__defenition {
+  margin: 0 0 8px;
+  font-size: 24px;
+  line-height: 24px;
+  color: $most-black;
+}
 
-  .living-example__consumption {
-    margin: 0 0 40px;
-    text-align: center;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #000000;
-  }
+.living-example__consumption {
+  margin: 0 0 40px;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $most-black;
 }

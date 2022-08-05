@@ -28,7 +28,7 @@
   font-weight: inherit;
   font-size: 36px;
   line-height: 36px;
-  color: #ffffff;
+  color: $white;
   margin: 27px auto 25px;
   text-align: center;
 }
@@ -37,7 +37,7 @@
   margin: 0;
   line-height: 14px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white;
   text-align: center;
   flex-grow: 1;
 }
@@ -55,13 +55,13 @@
 
 .promo__link {
   display: block;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  background-color: #68b738;
-  color: #ffffff;
+  background-color: $green;
+  color: $white;
   padding: 7px 0;
   text-align: center;
   text-decoration: none;

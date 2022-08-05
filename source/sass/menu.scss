@@ -5,12 +5,12 @@
 .menu__link {
   display: block;
   padding: 20px 0;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
+  color: $most-black;
   text-align: center;
 }

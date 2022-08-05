@@ -3,7 +3,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $most-black;
 }
 
 .product-description__list {
@@ -21,7 +21,7 @@
 }
 
 .product-description__text {
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   margin: 0;
   padding-left: 82px;
 
@@ -34,29 +34,23 @@
     bottom: 0;
     width: 60px;
     height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   &_leaf {
     background-image: url("../img/leaf.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 
   &_tub {
     background-image: url("../img/tub.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 
   &_eat {
     background-image: url("../img/eat.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 
   &_alarm {
     background-image: url("../img/alarm.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 }

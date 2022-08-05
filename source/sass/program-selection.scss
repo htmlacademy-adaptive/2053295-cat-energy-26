@@ -5,14 +5,14 @@
 }
 
 .program-selection__button {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #68b738;
+  color: $white;
+  background-color: $green;
   border: none;
   width: 100%;
   padding: 7px 0;
@@ -20,6 +20,6 @@
 
 .program-selection__text {
   line-height: 16px;
-  color: #000000;
+  color: $most-black;
   text-align: center;
 }
