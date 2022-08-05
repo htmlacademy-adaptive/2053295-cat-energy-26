@@ -12,8 +12,6 @@
   align-items: center;
 }
 
-.card-product__image {}
-
 .card-product__link {
   grid-column: 2/4;
   grid-row: 1/2;
@@ -22,7 +20,7 @@
 
 .card-product__title {
   margin: 0;
-  font-family: 'Oswald';
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -39,7 +37,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
-  font-family: "Arial", sans-serif;;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -47,8 +45,6 @@
   color: #444444;
 
 }
-
-.card-product__term {}
 
 .card-product__description {
   margin: 0;

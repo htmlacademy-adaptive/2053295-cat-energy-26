@@ -2,6 +2,7 @@
 
 .social__item {
   margin-right: 24px;
+
   &:last-child {
     margin: 0;
   }
@@ -12,6 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   &::before {
     content: "";
     position: absolute;
@@ -22,18 +24,21 @@
     width: 28px;
     height: 22px;
   }
+
   &_vk {
     background-image: url("../img/vk.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
   }
+
   &_telegram {
     background-image: url("../img/telegram.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
   }
+
   &_youtube {
     background-image: url("../img/youtube.svg");
     background-position: center;

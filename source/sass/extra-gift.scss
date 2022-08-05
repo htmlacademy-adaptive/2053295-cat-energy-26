@@ -19,7 +19,7 @@
   width: 161px;
   padding-bottom: 43px;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     top: 59px;
