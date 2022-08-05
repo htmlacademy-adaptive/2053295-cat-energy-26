@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML Academy: Кэт энерджи</title>
+  <base href="https://htmlacademy-adaptive.github.io/2053295-cat-energy-26/4/">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__container container">
+      <nav class="navigation">
+        <a class="navigation__logo" href="index.html">
+          <span class="visually-hidden">
+            Логотип сайта Кэт Энерджи
+          </span>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="#">
+            <source media="(min-width: 768px)" srcset="#">
+            <img class="navigation__logo-image" src="img/logo-mobile.svg" alt="Логотип магазина Кэт Энерджи." width="34" height="38">
+          </picture>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="#">
+            <source media="(min-width: 768px)" srcset="#">
+            <img class="navigation__logo-image" src="img/cat-energy.svg" alt="Название магазина Кэт Энерджи." width="101" height="38">
+          </picture>
+        </a>
+        <button class="navigation__button button" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
+        <ul class="navigation__menu menu">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">
+              главная
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="catalog.html">
+              каталог продукции
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">
+              подбор программы
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main-form main-container">
+    <div class="container">
+      <h1 class="main-form__title">
+        Подбор программы
+      </h1>
+      <p class="main-form__subtitle">
+        Заполните анкету, и мы подберем <br>программу питания для вашего кота
+      </p>
+      <form class="main-form__program-selection program-selection" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="program-selection__item program-form">
+          <legend class="visually-hidden">
+            Данные кота
+          </legend>
+          <ul class="program-form__list">
+            <li class="program-form__item">
+              <label class="program-form__label">
+                имя:*<input class="program-form__input" type="text" name="cat-name" placeholder="барсик" required>
+              </label>
+            </li>
+            <li class="program-form__item">
+              <label class="program-form__label">
+                вес (кг):*<input class="program-form__input" type="text" name="cat-name" placeholder="7" required>
+              </label>
+            </li>
+            <li class="program-form__item">
+              <label class="program-form__label">
+                возраст (лет):<input class="program-form__input" type="text" name="cat-name" placeholder="7">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="program-selection__item program-form">
+          <legend class="visually-hidden">
+            цель программы
+          </legend>
+          <ul class="program-form__list">
+            <li class="program-form__item">
+              <input class="program-form__radio" type="radio" id="weightloss" name="program-form" value="Похудение">
+              <label class="program-form__label" for="weightloss">похудение</label>
+            </li>
+            <li class="program-form__item">
+              <input class="program-form__radio" type="radio" id="fattening" name="program-form" value="Набор массы">
+              <label class="program-form__label" for="fattening">Набор массы</label>
+            </li>
+            <li class="program-form__item">
+              <input class="program-form__radio" type="radio" id="unknown" name="program-form" value="Не известно">
+              <label class="program-form__label" for="unknown">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="program-selection__item program-form">
+          <legend class="program-form__legend">
+            Контактные данные (владельца кота)
+          </legend>
+          <ul class="program-form__list">
+            <li class="program-form__item">
+              <label class="program-form__label">
+                <input class="program-form__input" type="email" placeholder="kuklachev@gmail.com" required>
+              </label>
+            </li>
+            <li class="program-form__item">
+              <label class="program-form__label">
+                <input class="program-form__input" type="tel" placeholder="8 (960) 900-60-90" required>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="program-selection__item program-form">
+          <legend class="program-form__legend">
+            Комментарий
+          </legend>
+          <textarea class="program-form__textarea" name="comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="program-selection__item program-form">
+          <legend class="program-form__legend">
+            Дополнительно
+          </legend>
+          <ul class="program-form__list">
+            <li class="program-form__item">
+              <input class="program-form__checkbox" type="checkbox" id="sweetener" name="sweetener" value="Сахарозаменитель" checked>
+              <label class="program-form__label" for="sweetener">сахарозаменитель</label>
+            </li>
+            <li class="program-form__item">
+              <input class="program-form__checkbox" type="checkbox" id="water" name="water" value="Питьевая вода">
+              <label class="program-form__label" for="water">питьевая вода</label>
+            </li>
+            <li class="program-form__item">
+              <input class="program-form__checkbox" type="checkbox" id="milk" name="milk" value="Молоко">
+              <label class="program-form__label" for="milk">молоко</label>
+            </li>
+            <li class="program-form__item">
+              <input class="program-form__checkbox" type="checkbox" id="vitamins" name="vitamins" value="Витамины">
+              <label class="program-form__label" for="vitamins">витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="program-selection__button button" type="submit">
+          отправить заявку
+        </button>
+        <p class="program-selection__text">
+          * — Обязательные поля
+        </p>
+      </form>
+    </div>
+    <section class="invite invite_tinted">
+      <div class="invite__container container">
+        <h2 class="invite__title">
+          приглашаем к сотрудничеству дилеров!
+        </h2>
+        <address class="invite__contacts">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </address>
+      </div>
+      <div class="invite__map map">
+        <iframe class="map__picture" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.171905916396!2d30.317739555698605!3d59.939012393962074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1659088995834!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo" href="index.html">
+      <img class="page-footer__image" src="img/cat-energy.svg" alt="Логотип компании" width="128" height="24">
+    </a>
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="visually-hidden">
+            Мы ВКонтакте
+          </span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="visually-hidden">
+            Мы в Instagram
+          </span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="visually-hidden">
+            Мы в Facebook
+          </span>
+        </a>
+      </li>
+    </ul>
+    <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
+      <span class="page-footer__text">
+        HTML Academy
+      </span>
+      <img src="img/logo-html.svg" alt="Логотип html академии." width="27" height="34">
+    </a>
+  </footer>
+</body>
+
+</html>
