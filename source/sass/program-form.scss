@@ -14,16 +14,45 @@
 .program-form__label {
   font-size: 16px;
   text-transform: uppercase;
+  color: #444444;
+
+  &_dark {
+    color: #222222;
+  }
+
+  &_blak {
+    color: #000000;
+  }
 }
 
 .program-form__input {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
-  color: $dark;
+  color: #444444;
+
+  &::placeholder {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #444444;
+
+  }
 }
 
 .program-form__legend {
   font-size: 24px;
   line-height: 26px;
-  color: $most-black;
+  color: #000000;
+}
+
+.program-form__textarea {
+  &::placeholder {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #444444;
+  }
 }

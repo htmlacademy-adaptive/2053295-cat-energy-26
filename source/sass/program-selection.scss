@@ -5,21 +5,25 @@
 }
 
 .program-selection__button {
-  font-family: $oswald;
+  min-height: 40px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $white;
-  background-color: $green;
+  text-align: center;
+  color: #ffffff;
+  background-color: #68b738;
   border: none;
   width: 100%;
-  padding: 7px 0;
+  margin-bottom: 21px;
 }
 
 .program-selection__text {
+  font-family: "Arial", sans-serif;
   line-height: 16px;
-  color: $most-black;
+  color: #000000;
   text-align: center;
+  margin: 0 0 32px;
 }

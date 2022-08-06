@@ -20,13 +20,13 @@
 
 .card-product__title {
   margin: 0;
-  font-family: $oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $almost-black;
+  color: #222222;
 }
 
 .card-product__list {
@@ -37,12 +37,12 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
-  font-family: $arial;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: $dark;
+  color: #444444;
 }
 
 .card-product__description {

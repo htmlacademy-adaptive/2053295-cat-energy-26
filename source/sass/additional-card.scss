@@ -16,7 +16,7 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: $almost-black;
+  color: #222222;
 }
 
 .additional-card__list {
@@ -26,7 +26,7 @@
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: 1fr;
   width: 100%;
-  font-family: $arial;
+  font-family: "Arial", sans-serif;
   line-height: 14px;
 }
 
