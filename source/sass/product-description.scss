@@ -3,7 +3,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $Black;
 }
 
 .product-description__list {
@@ -21,7 +21,7 @@
 }
 
 .product-description__text {
-  font-family: "Arial", sans-serif;
+  font-family: $Arial;
   margin: 0;
   padding-left: 82px;
   background-repeat: no-repeat;

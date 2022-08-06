@@ -3,7 +3,7 @@
 
   &::before {
     content: "";
-    background-image: url("../img/index-background.jpg"), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
+    background-image: url("../img/index-background.jpg"), linear-gradient($green-transparent, $green-transparent);
     background-blend-mode: overlay;
     position: absolute;
     left: 0;
@@ -28,7 +28,7 @@
   font-weight: inherit;
   font-size: 36px;
   line-height: 36px;
-  color: #ffffff;
+  color: $White;
   margin: 27px auto 25px;
   text-align: center;
 }
@@ -55,13 +55,13 @@
 
 .promo__link {
   display: block;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $Oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  background-color: #68b738;
-  color: #ffffff;
+  background-color: $Apple;
+  color: $White;
   padding: 7px 0;
   text-align: center;
   text-decoration: none;

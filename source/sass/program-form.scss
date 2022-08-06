@@ -14,44 +14,44 @@
 .program-form__label {
   font-size: 16px;
   text-transform: uppercase;
-  color: #444444;
+  color: $Tundora;
 
   &_dark {
-    color: #222222;
+    color: $Mine-Shaft;
   }
 
   &_blak {
-    color: #000000;
+    color: $Black;
   }
 }
 
 .program-form__input {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $Oswald;
   font-size: 16px;
   text-transform: uppercase;
-  color: #444444;
+  color: $Tundora;
 
   &::placeholder {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: $Oswald;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
-    color: #444444;
+    color: $Tundora;
   }
 }
 
 .program-form__legend {
   font-size: 24px;
   line-height: 26px;
-  color: #000000;
+  color: $Black;
 }
 
 .program-form__textarea {
   &::placeholder {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: $Oswald;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
-    color: #444444;
+    color: $Tundora;
   }
 }

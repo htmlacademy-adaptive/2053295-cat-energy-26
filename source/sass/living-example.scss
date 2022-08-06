@@ -1,18 +1,18 @@
 .living-example {
-  background-color: #eaeaea;
+  background-color: $Gallery;
 }
 
 .living-example__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $Black;
   margin-bottom: 40px;
   padding-top: 25px;
 }
 
 .living-example__text {
-  font-family: "Arial", sans-serif;
+  font-family: $Arial;
 }
 
 .living-example__inner {
@@ -30,19 +30,19 @@
 }
 
 .living-example__term {
-  font-family: "Arial", sans-serif;
+  font-family: $Arial;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
   margin-bottom: 11px;
-  color: #444444;
+  color: $Tundora;
 }
 
 .living-example__defenition {
   margin: 0 0 8px;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
+  color: $Black;
 }
 
 .living-example__consumption {
@@ -50,5 +50,5 @@
   text-align: center;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: $Black;
 }

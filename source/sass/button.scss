@@ -10,11 +10,11 @@
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #000000;
+  background-color: $Black;
 
   &::before {
     content: "";
-    background-color: #000000;
+    background-color: $Black;
     position: absolute;
     left: 0;
     top: 0;
@@ -22,12 +22,12 @@
     bottom: 100%;
     background-repeat: no-repeat;
     background-size: contain;
-    border: 1px solid #000000;
+    border: 1px solid $Black;
   }
 
   &::after {
     content: "";
-    background-color: #000000;
+    background-color: $Black;
     position: absolute;
     left: 0;
     top: 100%;
@@ -35,6 +35,6 @@
     bottom: 0;
     background-repeat: no-repeat;
     background-size: contain;
-    border: 1px solid #000000;
+    border: 1px solid $Black;
   }
 }
