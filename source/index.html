@@ -12,30 +12,43 @@
   <header class="page-header">
     <div class="page-header__container container">
       <nav class="navigation">
-        <a class="navigation__logo" href="index.html">
-          <span class="visually-hidden">
-            Логотип сайта Кэт Энерджи
-          </span>
-          <picture>
-            <source media="(min-width: 1440px)" srcset="#">
-            <source media="(min-width: 768px)" srcset="#">
-            <img class="navigation__logo-image" src="img/logo-mobile.svg" alt="Логотип магазина Кэт Энерджи." width="34" height="38">
-          </picture>
-          <picture>
-            <source media="(min-width: 1440px)" srcset="#">
-            <source media="(min-width: 768px)" srcset="#">
-            <img class="navigation__logo-image" src="img/cat-energy.svg" alt="Название магазина Кэт Энерджи." width="101" height="38">
-          </picture>
-        </a>
-        <button class="navigation__button button" type="button">
-          <span class="button__line"></span>
-          <span class="visually-hidden">
-            Открыть меню
-          </span>
-        </button>
+        <ul class="navigation__header navigation-header">
+          <li class="navigation-header__item">
+            <a class="navigation__logo navigation__logo-image" href="index.html">
+              <span class="visually-hidden">
+                Логотип сайта Кэт Энерджи
+              </span>
+              <picture>
+                <source media="(min-width: 1440px)" srcset="#">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="navigation__picture" src="img/logo-mobile.svg" alt="Логотип магазина Кэт Энерджи." width="34" height="38">
+              </picture>
+            </a>
+          </li>
+          <li class="navigation-header__item">
+            <a class="navigation__logo navigation__logo-text" href="index.html">
+              <span class="visually-hidden">
+                Баннер сайта Кэт Энерджи
+              </span>
+              <picture>
+                <source media="(min-width: 1440px)" srcset="#">
+                <source media="(min-width: 768px)" srcset="img/cat-energy.svg">
+                <img class="navigation__picture" src="img/cat-energy.svg" alt="Название магазина Кэт Энерджи." width="101" height="38">
+              </picture>
+            </a>
+          </li>
+          <li class="navigation-header__item">
+            <button class="navigation-header__button button" type="button">
+              <span class="button__line"></span>
+              <span class="visually-hidden">
+                Открыть меню
+              </span>
+            </button>
+          </li>
+        </ul>
         <ul class="navigation__menu menu">
           <li class="menu__item">
-            <a class="menu__link" href="index.html">
+            <a class="menu__link menu__link_active" href="index.html">
               главная
             </a>
           </li>

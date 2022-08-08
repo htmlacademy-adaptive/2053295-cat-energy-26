@@ -1,0 +1,25 @@
+.navigation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-header__item {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:last-child {
+    position: relative;
+  }
+}
+.navigation-header__button {
+  top: 25px;
+  right: 20px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
