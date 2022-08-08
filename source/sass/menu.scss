@@ -1,9 +1,10 @@
 .menu__item {
   list-style-type: none;
   margin-right: calc(35 / 768 * 100vw);
-    &:last-child {
-      margin-right: 0;
-    }
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .menu__link {
@@ -25,6 +26,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+
     &_active {
       border-color: $Apple;
     }
