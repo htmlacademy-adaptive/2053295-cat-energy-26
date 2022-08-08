@@ -1,0 +1,56 @@
+.card-product {
+  display: grid;
+  grid-template-columns: repeat(3, 50% 25% 25%);
+  grid-template-rows: repeat(3, auto);
+}
+
+.card-product__picture-link {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-product__link {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  text-decoration: none;
+}
+
+.card-product__title {
+  margin: 0;
+  font-family: $Oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $Mine-Shaft;
+}
+
+.card-product__list {
+  margin: 0;
+  padding: 14px 0 22px;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  font-family: $Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $Tundora;
+}
+
+.card-product__description {
+  margin: 0;
+  text-align: right;
+}
+
+.card-product__button {
+  grid-column: 1/4;
+  grid-row: 3/4;
+}

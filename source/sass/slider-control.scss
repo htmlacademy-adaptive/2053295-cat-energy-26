@@ -1,0 +1,18 @@
+.slider-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0 40px;
+}
+
+.slider-control__button {
+  font-family: $Oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $Black;
+  border: none;
+  padding: 5px 6px;
+}

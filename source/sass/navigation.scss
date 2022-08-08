@@ -1,0 +1,48 @@
+.navigation {
+  position: relative;
+  padding: 10px 0 18px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.navigation__logo {
+  display: block;
+
+  &_image {
+    height: 43px;
+  }
+
+  &_text {
+    img {
+      height: 19px;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    // width: calc(174 / 768 * 100%);
+    &_image {
+      height: 52px;
+    }
+  }
+}
+
+.navigation__picture {
+  height: 100%;
+}
+
+.navigation__menu {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

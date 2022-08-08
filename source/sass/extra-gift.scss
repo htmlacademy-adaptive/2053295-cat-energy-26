@@ -1,0 +1,34 @@
+.extra-gift {
+  position: relative;
+  width: 100%;
+  height: 290px;
+  background-image: url("../img/image2.jpg"), linear-gradient($green-transparent, $green-transparent);
+  background-blend-mode: overlay;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.extra-gift__text {
+  font-family: $Arial;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $White;
+  width: 161px;
+  padding-bottom: 43px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 59px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/icon_gift.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

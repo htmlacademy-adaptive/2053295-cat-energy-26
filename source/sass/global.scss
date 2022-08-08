@@ -1,0 +1,17 @@
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  display: flex;
+  min-height: 100%;
+  margin: 0;
+  flex-direction: column;
+  font-family: $Oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $Tundora;
+  background-color: $White;
+}

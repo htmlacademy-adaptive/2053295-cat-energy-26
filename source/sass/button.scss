@@ -1,0 +1,42 @@
+.button {
+  display: block;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+.button__line {
+  display: block;
+  width: 100%;
+  background-color: $Black;
+  border-top: 1px solid $Black;
+  border-bottom: 1px solid $Black;
+
+  &::before {
+    content: "";
+    background-color: $Black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid $Black;
+  }
+
+  &::after {
+    content: "";
+    background-color: $Black;
+    position: absolute;
+    left: 0;
+    top: calc(100% - 2px);
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid $Black;
+  }
+}

@@ -1,0 +1,57 @@
+.program-form__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.program-form__item {
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.program-form__label {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $Tundora;
+
+  &_dark {
+    color: $Mine-Shaft;
+  }
+
+  &_blak {
+    color: $Black;
+  }
+}
+
+.program-form__input {
+  font-family: $Oswald;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $Tundora;
+
+  &::placeholder {
+    font-family: $Oswald;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $Tundora;
+  }
+}
+
+.program-form__legend {
+  font-size: 24px;
+  line-height: 26px;
+  color: $Black;
+}
+
+.program-form__textarea {
+  &::placeholder {
+    font-family: $Oswald;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $Tundora;
+  }
+}

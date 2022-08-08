@@ -1,0 +1,28 @@
+.menu__item {
+  list-style-type: none;
+}
+
+.menu__link {
+  display: block;
+  padding: 20px 0;
+  font-family: $Oswald;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $Black;
+  text-align: center;
+  border-bottom: 1px solid transparent;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+    padding: 8px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    &_active {
+      border-color: $Apple;
+    }
+  }
+}

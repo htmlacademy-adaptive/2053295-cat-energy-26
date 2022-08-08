@@ -1,0 +1,29 @@
+.program-selection__item {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.program-selection__button {
+  min-height: 40px;
+  font-family: $Oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $White;
+  background-color: $Apple;
+  border: none;
+  width: 100%;
+  margin-bottom: 21px;
+}
+
+.program-selection__text {
+  font-family: $Arial;
+  line-height: 16px;
+  color: $Black;
+  text-align: center;
+  margin: 0 0 32px;
+}
