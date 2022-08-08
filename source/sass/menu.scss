@@ -1,5 +1,9 @@
 .menu__item {
   list-style-type: none;
+  margin-right: calc(35 / 768 * 100vw);
+    &:last-child {
+      margin-right: 0;
+    }
 }
 
 .menu__link {
@@ -17,7 +21,7 @@
 
   @media (min-width: 768px) {
     display: inline-block;
-    padding: 8px 0;
+    padding: 11px 0;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
