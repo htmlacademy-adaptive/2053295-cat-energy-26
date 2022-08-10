@@ -1,8 +1,18 @@
 .living-example {
-  background-color: $Gallery;
+  position: relative;
 
   @media (min-width: 768px) {
-    background-color: $White;
+    &::before {
+      content: "";
+      background: linear-gradient($Gallery, $Gallery);
+      background-blend-mode: overlay;
+      position: absolute;
+      left: 0;
+      top: 57%;
+      right: 0;
+      bottom: 0%;
+      z-index: -10;
+    }
   }
 }
 
