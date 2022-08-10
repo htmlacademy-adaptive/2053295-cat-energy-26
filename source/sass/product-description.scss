@@ -85,34 +85,37 @@
     }
   }
 
-  &_leaf {
-    &::before {
-      background-image: url("../img/leaf.svg");
-    }
-  }
-
-  &_tub {
-    &::before {
-      background-image: url("../img/tub.svg");
-    }
-  }
-
-  &_eat {
-    &::before {
-      background-image: url("../img/eat.svg");
-    }
-
-    &_alarm {
-      &::before {
-        background-image: url("../img/alarm.svg");
-      }
-    }
-  }
-
   @media (min-width: 768px) {
     position: relative;
     padding-left: 0;
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+
+
+
+.product-description__text_leaf {
+  &::before {
+    background-image: url("../img/leaf.svg");
+  }
+}
+
+.product-description__text_tub {
+  &::before {
+    background-image: url("../img/tub.svg");
+  }
+}
+
+.product-description__text_eat {
+  &::before {
+    background-image: url("../img/eat.svg");
+  }
+}
+
+.product-description__text_alarm {
+  &::before {
+    background-image: url("../img/alarm.svg");
   }
 }
