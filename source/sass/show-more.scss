@@ -6,6 +6,10 @@
   text-transform: uppercase;
   color: $Cod-Gray;
   margin: 57px 0 8px;
+
+  @media (min-width: 768px) {
+    margin: 0 0 23px;
+  }
 }
 
 .show-more__text {
@@ -14,6 +18,10 @@
   line-height: 16px;
   text-align: center;
   margin: 0 0 21px;
+
+  @media (min-width: 768px) {
+    margin: 0 0 87px;
+  }
 }
 
 .show-more__button {
