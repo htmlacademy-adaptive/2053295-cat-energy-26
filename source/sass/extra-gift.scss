@@ -11,10 +11,10 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+
   @media (min-width: 768px) {
     background-size: cover;
     flex-direction: row;
-    // justify-content: space-between;
   }
 }
 
@@ -26,6 +26,7 @@
   color: $White;
   width: 161px;
   padding-bottom: 43px;
+
   @media (min-width: 768px) {
     padding: 0;
     margin-right: 124px;
