@@ -1,7 +1,21 @@
+.program-selection {
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+
 .program-selection__item {
   margin: 0;
   padding: 0;
   border: 0;
+
+  @media (min-width: 1440px) {
+    &:nth-child(n+3) {
+      grid-column: 1 / -1;
+    }
+  }
 }
 
 .program-selection__button {
