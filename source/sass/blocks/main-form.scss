@@ -1,0 +1,28 @@
+.main-form__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $Black;
+  margin: 27px 0 37px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 27px 0 54px;
+  }
+}
+
+.main-form__subtitle {
+  text-transform: uppercase;
+  color: $Black;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 66px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 64 0 54px;
+  }
+}

@@ -2,6 +2,13 @@
   display: grid;
   grid-template-columns: repeat(3, 50% 25% 25%);
   grid-template-rows: repeat(3, auto);
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 .card-product__picture-link {
@@ -10,6 +17,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 768px) {
+    height: 207px;
+  }
 }
 
 .card-product__link {
@@ -27,6 +38,12 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $Mine-Shaft;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 21px;
+    text-align: center;
+  }
 }
 
 .card-product__list {
@@ -43,6 +60,11 @@
   font-size: 12px;
   line-height: 16px;
   color: $Tundora;
+
+  @media (min-width: 768px) {
+    width: 100%;
+    font-size: 16px;
+  }
 }
 
 .card-product__description {
@@ -53,4 +75,8 @@
 .card-product__button {
   grid-column: 1/4;
   grid-row: 3/4;
+
+  @media (min-width: 768px) {
+    width: 100%;
+  }
 }

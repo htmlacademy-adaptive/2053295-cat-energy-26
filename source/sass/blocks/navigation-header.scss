@@ -11,10 +11,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   &:last-child {
     position: relative;
   }
 }
+
 .navigation-header__button {
   top: 25px;
   right: 20px;

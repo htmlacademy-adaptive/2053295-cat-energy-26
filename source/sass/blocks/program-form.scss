@@ -1,6 +1,27 @@
 .program-form__list {
   list-style-type: none;
   padding: 0;
+
+  &_contact-details {
+    @media (min-width: 1440px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+    }
+  }
+
+  &_additionally {
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4);
+    }
+
+    @media (min-width: 1440px) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+    }
+  }
 }
 
 .program-form__item {
@@ -15,6 +36,11 @@
   font-size: 16px;
   text-transform: uppercase;
   color: $Tundora;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &_dark {
     color: $Mine-Shaft;

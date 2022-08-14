@@ -7,8 +7,11 @@
 .invite__container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   padding: 26px 0;
+
+  @media (min-width: 768px) {
+    padding: 60px 40px 56px;
+  }
 }
 
 .invite__title {
@@ -19,6 +22,12 @@
   color: $Cod-Gray;
   margin: 0;
   width: calc(50% - 1px);
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 25%;
+  }
 }
 
 .invite__contacts {
@@ -27,4 +36,24 @@
   line-height: 20px;
   color: $Tundora;
   width: calc(50% - 1px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  min-height: 100%;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    width: 25%;
+    align-items: end;
+    text-align: right;
+  }
+}
+
+.invite__city {
+  display: block;
+}
+
+.invite__street {
+  display: block;
 }

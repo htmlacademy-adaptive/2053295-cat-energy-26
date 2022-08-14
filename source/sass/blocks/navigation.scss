@@ -14,20 +14,18 @@
   display: block;
 
   &_image {
-    height: 43px;
-  }
+    @media (min-width: 768px) {
+      padding: 8px calc(12 / 768 * 100vw) 8px 0;
+    }
 
-  &_text {
-    img {
-      height: 19px;
+    @media (min-width: 1440px) {
+      padding: 8px calc(14 / 1440 * 100vw) 8px 0;
     }
   }
 
-  @media (min-width: 768px) {
-
-    // width: calc(174 / 768 * 100%);
-    &_image {
-      height: 52px;
+  &_text {
+    @media (min-width: 768px) {
+      padding: 13px 0;
     }
   }
 }

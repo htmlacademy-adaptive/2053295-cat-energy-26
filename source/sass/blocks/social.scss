@@ -1,6 +1,10 @@
 .social__item {
   margin-right: 24px;
 
+  @media (min-width: 768px) {
+    margin-right: 26px;
+  }
+
   &:last-child {
     margin: 0;
   }

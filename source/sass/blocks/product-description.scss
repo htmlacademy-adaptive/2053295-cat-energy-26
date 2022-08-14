@@ -1,0 +1,130 @@
+.product-description__title {
+  margin: 20px 0 40px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $Black;
+
+  @media (min-width: 768px) {
+    margin: 45px 0 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 71px 0 32px;
+  }
+}
+
+.product-description__list {
+  margin: 0;
+  padding: 0;
+  counter-reset: list1;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 35px;
+    grid-column-gap: calc(135 / 672 * 100%);
+  }
+
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 77px;
+    margin-bottom: 69px;
+  }
+}
+
+.product-description__item {
+  position: relative;
+  list-style: none;
+  margin-bottom: 20px;
+  min-height: 60px;
+
+  &:last-child {
+    margin-bottom: 50px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    margin: 0;
+    width: 247px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &::before {
+      counter-increment: list1;
+      content: counter(list1) "";
+      position: absolute;
+      left: 50%;
+      font-size: 280px;
+      line-height: 280px;
+      text-align: center;
+      color: $Concrete;
+    }
+  }
+}
+
+.product-description__text {
+  font-family: $Arial;
+  margin: 0;
+  padding-left: 82px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/leaf.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media (min-width: 768px) {
+      top: -145%;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    position: relative;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.product-description__text_leaf {
+  &::before {
+    background-image: url("../img/leaf.svg");
+  }
+}
+
+.product-description__text_tub {
+  &::before {
+    background-image: url("../img/tub.svg");
+  }
+}
+
+.product-description__text_eat {
+  &::before {
+    background-image: url("../img/eat.svg");
+  }
+}
+
+.product-description__text_alarm {
+  &::before {
+    background-image: url("../img/alarm.svg");
+  }
+}
