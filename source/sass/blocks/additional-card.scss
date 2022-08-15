@@ -18,7 +18,7 @@
 }
 
 .additional-card__title {
-  margin: 13px 0;
+  margin: 0 0 13px;
   grid-column: 1/2;
   grid-row: 1/2;
   font-weight: 400;
@@ -47,6 +47,7 @@
   width: 100%;
   font-family: $Arial;
   line-height: 14px;
+  margin: 0 0 12px;
 
   @media (min-width: 768px) {
     grid-column: 2/4;

@@ -1,3 +1,12 @@
+.show-more__wrapper {
+  height: 100%;
+  background-image: url("../img/plus.svg");
+  background-position: 50% 10%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 .show-more__title {
   font-weight: 400;
   font-size: 16px;
@@ -5,7 +14,7 @@
   text-align: center;
   text-transform: uppercase;
   color: $Cod-Gray;
-  margin: 57px 0 8px;
+  margin: 0 0 8px;
 
   @media (min-width: 768px) {
     margin: 0 0 23px;

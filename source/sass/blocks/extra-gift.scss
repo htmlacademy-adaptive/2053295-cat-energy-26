@@ -5,7 +5,7 @@
   background-image: url("../img/image2.jpg"), linear-gradient($green-transparent, $green-transparent);
   background-blend-mode: overlay;
   background-size: contain;
-  background-position: center;
+  background-position: 10% 90%;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -17,6 +17,9 @@
     flex-direction: row;
   }
 }
+.extra-gift__wrapper {
+  margin-bottom: 35px;
+}
 
 .extra-gift__text {
   font-family: $Arial;
@@ -26,10 +29,13 @@
   color: $White;
   width: 161px;
   padding-bottom: 43px;
+  margin: 0;
 
   @media (min-width: 768px) {
     padding: 0;
     margin-right: 124px;
+    display: flex;
+    justify-content: space-between;
   }
 
   &::before {

@@ -2,7 +2,6 @@
   width: 100%;
 
   @media (min-width: 768px) {
-    padding: 24px 0 32px;
   }
 
   &_absolute {
@@ -12,4 +11,7 @@
       z-index: 10;
     }
   }
+}
+.page-header__container {
+padding: 10px 0 18px;
 }

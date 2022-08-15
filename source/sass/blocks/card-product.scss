@@ -12,18 +12,23 @@
 }
 
 .card-product__picture-link {
+  display: block;
   grid-column: 1/2;
   grid-row: 1/3;
   display: flex;
   justify-content: center;
   align-items: center;
 
+
   @media (min-width: 768px) {
-    height: 207px;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 35px;
   }
 }
 
 .card-product__link {
+  display: block;
   grid-column: 2/4;
   grid-row: 1/2;
   text-decoration: none;
@@ -42,7 +47,13 @@
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 21px;
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -66,8 +77,13 @@
     font-size: 16px;
   }
 }
-
+.card-product__term {
+padding: 9px 0;
+border-bottom: 1px solid $Silver;
+}
 .card-product__description {
+  padding: 9px 0;
+  border-bottom: 1px solid $Silver;
   margin: 0;
   text-align: right;
 }

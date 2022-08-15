@@ -1,16 +1,35 @@
 .invite {
+  @media (min-width: 1440px) {
+    position: relative;
+  }
+}
+
+.invite {
+
   &_tinted {
     background-color: $Concrete;
+
+
   }
 }
 
 .invite__container {
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
   padding: 26px 0;
 
   @media (min-width: 768px) {
     padding: 60px 40px 56px;
+  }
+
+  @media (min-width: 1440px) {
+    position: absolute;
+    left: 110px;
+    top: 95px;
+    width: 565px;
+    background-color: $White;
+    padding: 60px 80px 56px;
   }
 }
 
@@ -21,12 +40,10 @@
   text-transform: uppercase;
   color: $Cod-Gray;
   margin: 0;
-  width: calc(50% - 1px);
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 26px;
-    width: 25%;
   }
 }
 
@@ -35,18 +52,20 @@
   font-style: normal;
   line-height: 20px;
   color: $Tundora;
-  width: calc(50% - 1px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  min-height: 100%;
 
   @media (min-width: 768px) {
     font-size: 16px;
-    width: 25%;
     align-items: end;
     text-align: right;
+  }
+
+  @media (min-width: 1440px) {
+    align-items: start;
+    text-align: left;
   }
 }
 

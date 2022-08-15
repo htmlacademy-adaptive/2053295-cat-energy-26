@@ -1,18 +1,28 @@
+.product-description__wrapper {
+  padding-top: 25px;
+  @media (min-width: 768px) {
+    padding-top: 71px;
+  }
+  @media (min-width: 1440px) {
+    padding-top: 45px;
+  }
+}
 .product-description__title {
-  margin: 20px 0 40px;
+  margin: 0 0 40px;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: $Black;
 
   @media (min-width: 768px) {
-    margin: 45px 0 32px;
+    // margin: 45px 0 32px;
+    margin-bottom: 32px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: 1440px) {
-    margin: 71px 0 32px;
+    // margin: 71px 0 32px;
   }
 }
 
