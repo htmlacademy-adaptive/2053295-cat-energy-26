@@ -132,7 +132,7 @@
   &::after {
     content: "";
     background-image: url("../img/arrow.svg");
-    background-position: center;
+    background-position: 100% 50%;
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;

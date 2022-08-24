@@ -66,8 +66,8 @@
       </nav>
     </div>
   </header>
-  <main class="main-form main-container">
-    <div class="container">
+  <main class="main-form main-container container">
+
       <h1 class="main-form__title">
         Подбор программы
       </h1>
@@ -79,7 +79,7 @@
           <legend class="visually-hidden">
             Данные кота
           </legend>
-          <ul class="program-form__list">
+          <ul class="program-form__list program-form__list_upper">
             <li class="program-form__item">
               <label class="program-form__label">
                 имя:*<input class="program-form__input" type="text" name="cat-name" placeholder="барсик" required>
@@ -101,68 +101,68 @@
           <legend class="visually-hidden">
             цель программы
           </legend>
-          <ul class="program-form__list">
+          <ul class="program-form__list program-form__list_radio">
             <li class="program-form__item">
-              <input class="program-form__radio" type="radio" id="weightloss" name="program-form" value="Похудение">
-              <label class="program-form__label program-form__label_dark" for="weightloss">похудение</label>
+              <input class="program-form__radio" type="radio" id="weightloss" name="program-form" value="Похудение" checked>
+              <label class="program-form__label program-form__label_dark program-form__label_radio" for="weightloss">похудение</label>
             </li>
             <li class="program-form__item">
               <input class="program-form__radio" type="radio" id="fattening" name="program-form" value="Набор массы">
-              <label class="program-form__label program-form__label_dark" for="fattening">Набор массы</label>
+              <label class="program-form__label program-form__label_dark program-form__label_radio" for="fattening">Набор массы</label>
             </li>
             <li class="program-form__item">
               <input class="program-form__radio" type="radio" id="unknown" name="program-form" value="Не известно">
-              <label class="program-form__label program-form__label_dark" for="unknown">Не знаю (Нужен ваш совет)</label>
+              <label class="program-form__label program-form__label_dark program-form__label_radio" for="unknown">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="program-selection__item program-form">
+        <fieldset class="program-selection__item program-form program-form_long">
           <legend class="program-form__legend">
-            Контактные данные (владельца кота)
+            Контактные данные <br class="transferal">(владельца кота)
           </legend>
           <ul class="program-form__list program-form__list_contact-details">
             <li class="program-form__item">
               <label class="program-form__label">
-                E-mail:*<input class="program-form__input" type="email" placeholder="kuklachev@gmail.com" required>
+                E-mail:*<input class="program-form__input program-form__input_email" type="email" placeholder="kuklachev@gmail.com" required>
               </label>
             </li>
             <li class="program-form__item">
               <label class="program-form__label">
-                Телефон:*<input class="program-form__input" type="tel" placeholder="8 (960) 900-60-90" required>
+                Телефон:*<input class="program-form__input program-form__input_phone" type="tel" placeholder="8 (960) 900-60-90" required>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="program-selection__item program-form">
+        <fieldset class="program-selection__item program-form program-form_long">
           <legend class="program-form__legend">
             Комментарий
           </legend>
           <textarea class="program-form__textarea" name="comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="program-selection__item program-form">
+        <fieldset class="program-selection__item program-form program-form_long">
           <legend class="program-form__legend">
             Дополнительно
           </legend>
           <ul class="program-form__list program-form__list_additionally">
             <li class="program-form__item">
               <input class="program-form__checkbox" type="checkbox" id="sweetener" name="sweetener" value="Сахарозаменитель" checked>
-              <label class="program-form__label program-form__label_blak" for="sweetener">сахарозаменитель</label>
+              <label class="program-form__label program-form__label_blak program-form__label_checkbox" for="sweetener">сахарозаменитель</label>
             </li>
             <li class="program-form__item">
               <input class="program-form__checkbox" type="checkbox" id="water" name="water" value="Питьевая вода">
-              <label class="program-form__label program-form__label_blak" for="water">питьевая вода</label>
+              <label class="program-form__label program-form__label_blak program-form__label_checkbox" for="water">питьевая вода</label>
             </li>
             <li class="program-form__item">
               <input class="program-form__checkbox" type="checkbox" id="milk" name="milk" value="Молоко">
-              <label class="program-form__label program-form__label_blak" for="milk">молоко</label>
+              <label class="program-form__label program-form__label_blak program-form__label_checkbox" for="milk">молоко</label>
             </li>
             <li class="program-form__item">
               <input class="program-form__checkbox" type="checkbox" id="vitamins" name="vitamins" value="Витамины">
-              <label class="program-form__label program-form__label_blak" for="vitamins">витамины</label>
+              <label class="program-form__label program-form__label_blak program-form__label_checkbox" for="vitamins">витамины</label>
             </li>
           </ul>
         </fieldset>
-        <div class="form-submission">
+        <div class="program-selection__item program-form program-form__wrapper program-form_long form-submission">
           <button class="program-selection__button button" type="submit">
             отправить заявку
           </button>
@@ -171,7 +171,7 @@
           </p>
         </div>
       </form>
-    </div>
+
     <section class="invite invite_tinted">
       <div class="invite__container container">
         <h2 class="invite__title">
