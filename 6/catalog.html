@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML Academy: Кэт энерджи</title>
+  <base href="https://htmlacademy-adaptive.github.io/2053295-cat-energy-26/6/">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__container container">
+      <nav class="navigation">
+        <ul class="navigation__header navigation-header">
+          <li class="navigation-header__item">
+            <a class="navigation__logo navigation__logo_image" href="index.html">
+              <span class="visually-hidden">
+                Логотип сайта Кэт Энерджи
+              </span>
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="71" height="60">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="61" height="50">
+                <img class="navigation__picture" src="img/logo-mobile.svg" alt="Логотип магазина Кэт Энерджи." width="34" height="38">
+              </picture>
+            </a>
+          </li>
+          <li class="navigation-header__item">
+            <a class="navigation__logo navigation__logo_text" href="index.html">
+              <span class="visually-hidden">
+                Баннер сайта Кэт Энерджи
+              </span>
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat-energy.svg" width="118" height="22">
+                <source media="(min-width: 768px)" srcset="img/cat-energy.svg" width="101" height="18">
+                <img class="navigation__picture" src="img/cat-energy.svg" alt="Название магазина Кэт Энерджи." width="101" height="18">
+              </picture>
+            </a>
+          </li>
+          <li class="navigation-header__item">
+            <button class="navigation-header__button button" type="button">
+              <span class="button__line"></span>
+              <span class="visually-hidden">
+                Открыть меню
+              </span>
+            </button>
+          </li>
+        </ul>
+        <ul class="navigation__menu menu">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">
+              главная
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link_active" href="catalog.html">
+              каталог продукции
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">
+              подбор программы
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main-catalog main-container">
+    <div class="main-catalog__container container">
+      <h1 class="main-catalog__title">
+        Каталог продукции
+      </h1>
+      <section class="products">
+        <h2 class="visually-hidden">
+          Основные товары
+        </h2>
+        <ul class="products__list">
+          <li class="products__item card-product">
+            <a class="card-product__picture-link" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog-1.png" width="172" height="202">
+                <source media="(min-width: 768px)" srcset="img/catalog-1.png" width="161" height="172">
+                <img class="card-product__image" src="img/catalog-1.png" alt="Кошачий корм из курицы 500 грамм." width="68" height="78">
+              </picture>
+            </a>
+            <a class="card-product__link" href="#">
+              <h3 class="card-product__title">
+                Cat Energy <br>pro 500 г
+              </h3>
+            </a>
+            <dl class="card-product__list">
+              <dt class="card-product__term">
+                Масса
+              </dt>
+              <dd class="card-product__description">
+                500 г
+              </dd>
+              <dt class="card-product__term">
+                Вкус
+              </dt>
+              <dd class="card-product__description">
+                Курица
+              </dd>
+              <dt class="card-product__term">
+                Цена
+              </dt>
+              <dd class="card-product__description">
+                700 Р.
+              </dd>
+            </dl>
+            <button class="card-product__button order-button" type="button">
+              заказать
+            </button>
+          </li>
+          <li class="products__item card-product">
+            <a class="card-product__picture-link" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog-2.png" width="169" height="207">
+                <source media="(min-width: 768px)" srcset="img/catalog-2.png" width="169" height="207">
+                <img class="card-product__image" src="img/catalog-2.png" alt="Кошачий корм из курицы 1000 грамм." width="84" height="100">
+              </picture>
+            </a>
+            <a class="card-product__link" href="#">
+              <h3 class="card-product__title">
+                Cat Energy <br>pro 1000 г
+              </h3>
+            </a>
+            <dl class="card-product__list">
+              <dt class="card-product__term">
+                Масса
+              </dt>
+              <dd class="card-product__description">
+                1000 г
+              </dd>
+              <dt class="card-product__term">
+                Вкус
+              </dt>
+              <dd class="card-product__description">
+                Курица
+              </dd>
+              <dt class="card-product__term">
+                Цена
+              </dt>
+              <dd class="card-product__description">
+                1000 Р.
+              </dd>
+            </dl>
+            <button class="card-product__button order-button" type="button">
+              заказать
+            </button>
+          </li>
+          <li class="products__item card-product">
+            <a class="card-product__picture-link" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog-3.png" width="172" height="202">
+                <source media="(min-width: 768px)" srcset="img/catalog-3.png" width="161" height="172">
+                <img class="card-product__image" src="img/catalog-3.png" alt="Кошачий корм из рыбы 500 грамм." width="68" height="78">
+              </picture>
+            </a>
+            <a class="card-product__link" href="#">
+              <h3 class="card-product__title">
+                Cat Energy <br>pro 500 г
+              </h3>
+            </a>
+            <dl class="card-product__list">
+              <dt class="card-product__term">
+                Масса
+              </dt>
+              <dd class="card-product__description">
+                500 г
+              </dd>
+              <dt class="card-product__term">
+                Вкус
+              </dt>
+              <dd class="card-product__description">
+                Рыба
+              </dd>
+              <dt class="card-product__term">
+                Цена
+              </dt>
+              <dd class="card-product__description">
+                700 Р.
+              </dd>
+            </dl>
+            <button class="card-product__button order-button" type="button">
+              заказать
+            </button>
+          </li>
+          <li class="products__item card-product">
+            <a class="card-product__picture-link" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog-4.png" width="169" height="207">
+                <source media="(min-width: 768px)" srcset="img/catalog-4.png" width="169" height="207">
+                <img class="card-product__image" src="img/catalog-4.png" alt="Кошачий корм из рыбы 1000 грамм." width="84" height="100">
+              </picture>
+            </a>
+            <a class="card-product__link" href="#">
+              <h3 class="card-product__title">
+                Cat Energy <br>pro 1000 г
+              </h3>
+            </a>
+            <dl class="card-product__list">
+              <dt class="card-product__term">
+                Масса
+              </dt>
+              <dd class="card-product__description">
+                1000 г
+              </dd>
+              <dt class="card-product__term">
+                Вкус
+              </dt>
+              <dd class="card-product__description">
+                Рыба
+              </dd>
+              <dt class="card-product__term">
+                Цена
+              </dt>
+              <dd class="card-product__description">
+                1000 Р.
+              </dd>
+            </dl>
+            <button class="card-product__button order-button" type="button">
+              заказать
+            </button>
+          </li>
+          <li class="products__item card-product">
+            <a class="card-product__picture-link" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog-5.png" width="169" height="207">
+                <source media="(min-width: 768px)" srcset="img/catalog-5.png" width="169" height="207">
+                <img class="card-product__image" src="img/catalog-5.png" alt="Кошачий корм из курицы 1000 грамм." width="84" height="100">
+              </picture>
+            </a>
+            <a class="card-product__link" href="#">
+              <h3 class="card-product__title">
+                Cat Energy <br>slim 1000 г
+              </h3>
+            </a>
+            <dl class="card-product__list">
+              <dt class="card-product__term">
+                Масса
+              </dt>
+              <dd class="card-product__description">
+                500 г
+              </dd>
+              <dt class="card-product__term">
+                Вкус
+              </dt>
+              <dd class="card-product__description">
+                Гречка
+              </dd>
+              <dt class="card-product__term">
+                Цена
+              </dt>
+              <dd class="card-product__description">
+                400 Р.
+              </dd>
+            </dl>
+            <button class="card-product__button order-button" type="button">
+              заказать
+            </button>
+          </li>
+          <li class="products__item card-product">
+            <a class="card-product__picture-link" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog-6.png" width="169" height="207">
+                <source media="(min-width: 768px)" srcset="img/catalog-6.png" width="169" height="207">
+                <img class="card-product__image" src="img/catalog-6.png" alt="Кошачий корм с гречкой 1000 грамм." width="84" height="100">
+              </picture>
+            </a>
+            <a class="card-product__link" href="#">
+              <h3 class="card-product__title">
+                Cat Energy <br>slim 1000 г
+              </h3>
+            </a>
+            <dl class="card-product__list">
+              <dt class="card-product__term">
+                Масса
+              </dt>
+              <dd class="card-product__description">
+                1000 г
+              </dd>
+              <dt class="card-product__term">
+                Вкус
+              </dt>
+              <dd class="card-product__description">
+                Гречка
+              </dd>
+              <dt class="card-product__term">
+                Цена
+              </dt>
+              <dd class="card-product__description">
+                700 Р.
+              </dd>
+            </dl>
+            <button class="card-product__button order-button" type="button">
+              заказать
+            </button>
+          </li>
+          <li class="products__item card-product">
+            <a class="card-product__picture-link" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog-7.png" width="172" height="202">
+                <source media="(min-width: 768px)" srcset="img/catalog-7.png" width="161" height="172">
+                <img class="card-product__image" src="img/catalog-7.png" alt="Кошачий корм с рисом 500 грамм." width="68" height="78">
+              </picture>
+            </a>
+            <a class="card-product__link" href="#">
+              <h3 class="card-product__title">
+                Cat Energy <br>slim 500 г
+              </h3>
+            </a>
+            <dl class="card-product__list">
+              <dt class="card-product__term">
+                Масса
+              </dt>
+              <dd class="card-product__description">
+                500 г
+              </dd>
+              <dt class="card-product__term">
+                Вкус
+              </dt>
+              <dd class="card-product__description">
+                Рис
+              </dd>
+              <dt class="card-product__term">
+                Цена
+              </dt>
+              <dd class="card-product__description">
+                500 Р.
+              </dd>
+            </dl>
+            <button class="card-product__button order-button" type="button">
+              заказать
+            </button>
+          </li>
+          <li class="products__item">
+            <section class="show-more show-more__wrapper">
+              <h3 class="show-more__title">
+                Показать еще 100500 товаров
+              </h3>
+              <p class="show-more__text">
+                На самом деле вкусов гораздо больше!
+              </p>
+              <button class="show-more__button order-button" type="button">
+                показать все
+              </button>
+            </section>
+          </li>
+        </ul>
+      </section>
+      <section class="additional-products additional-products__wrapper">
+        <h2 class="additional-products__title">
+          Дополнительные товары
+        </h2>
+        <ul class="additional-products__list">
+          <li class="additional-products__item additional-card">
+            <a class="additional-card__link" href="#">
+              <h3 class="additional-card__title">
+                Сахарозаменитель
+              </h3>
+            </a>
+            <dl class="additional-card__list">
+              <dt class="additional-card__term">
+                1 упаковка (100 г)
+              </dt>
+              <dd class="additional-card__description">
+                200 Р.
+              </dd>
+            </dl>
+            <button class="additional-card__button order-button" type="button">
+              заказать
+            </button>
+          </li>
+          <li class="additional-products__item additional-card">
+            <a class="additional-card__link" href="#">
+              <h3 class="additional-card__title">
+                питьевая вода
+              </h3>
+            </a>
+            <dl class="additional-card__list">
+              <dt class="additional-card__term">
+                5 литров
+              </dt>
+              <dd class="additional-card__description">
+                50 Р.
+              </dd>
+            </dl>
+            <button class="additional-card__button order-button" type="button">
+              заказать
+            </button>
+          </li>
+          <li class="additional-products__item additional-card">
+            <a class="additional-card__link" href="#">
+              <h3 class="additional-card__title">
+                молоко
+              </h3>
+            </a>
+            <dl class="additional-card__list">
+              <dt class="additional-card__term">
+                1 литр
+              </dt>
+              <dd class="additional-card__description">
+                100 Р.
+              </dd>
+            </dl>
+            <button class="additional-card__button order-button" type="button">
+              заказать
+            </button>
+          </li>
+          <li class="additional-products__item additional-card">
+            <a class="additional-card__link" href="#">
+              <h3 class="additional-card__title">
+                витамины
+              </h3>
+            </a>
+            <dl class="additional-card__list">
+              <dt class="additional-card__term">
+                1 упаковка (30 г)
+              </dt>
+              <dd class="additional-card__description">
+                300 Р.
+              </dd>
+            </dl>
+            <button class="additional-card__button order-button" type="button">
+              заказать
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="extra-gift extra-gift__wrapper">
+        <h3 class="visually-hidden">
+          Дополнительный подарок
+        </h3>
+        <p class="extra-gift__text">
+          Закажите всё <br>и получите чехол для <br>кота в подарок!
+        </p>
+      </section>
+    </div>
+    <section class="invite invite_tinted">
+      <div class="invite__container container">
+        <h2 class="invite__title">
+          приглашаем <br>к сотрудничеству <br>дилеров!
+        </h2>
+        <address class="invite__contacts">
+          <span class="invite__street">ул. Большая <br>Конюшенная, д. 19/8</span> <span class="invite__city">Санкт-Петербург</span>
+        </address>
+      </div>
+      <div class="invite__map map">
+        <iframe class="map__picture" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.171905916396!2d30.317739555698605!3d59.939012393962074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1659088995834!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__container container">
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__image" src="img/cat-energy.svg" alt="Логотип компании" width="128" height="24">
+      </a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link_vk" href="#">
+            <span class="visually-hidden">
+              Мы ВКонтакте
+            </span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link_youtube" href="#">
+            <span class="visually-hidden">
+              Мы на Youtube
+            </span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link_telegram" href="#">
+            <span class="visually-hidden">
+              Мы в Telegram
+            </span>
+          </a>
+        </li>
+      </ul>
+      <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="page-footer__text">
+          HTML Academy
+        </span>
+        <img src="img/logo-html.svg" alt="Логотип html академии." width="27" height="34">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
