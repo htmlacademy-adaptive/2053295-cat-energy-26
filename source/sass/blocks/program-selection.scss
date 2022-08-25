@@ -10,9 +10,11 @@
 .program-selection__item {
   border: none;
   border-bottom: 1px solid $Alto;
-  margin: 0;
+  padding: 0 0 65px;
+  &:last-child {
+    border: none;
+  }
   @media (min-width: 768px) {
-    padding: 0 40px;
     border: none;
   }
 }
@@ -32,7 +34,7 @@
   width: 100%;
   margin-bottom: 21px;
 
-  @media (min-width: 1440px) {
+  @media (min-width: 768px) {
     margin-bottom: 0;
   }
 }
@@ -43,10 +45,11 @@
   color: $Black;
   text-align: center;
   margin: 0;
+  display: flex;
+    justify-content: center;
+    align-items: center;
 
   @media (min-width: 1440px) {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+justify-content: flex-start;
   }
 }

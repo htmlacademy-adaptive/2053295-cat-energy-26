@@ -5,7 +5,7 @@
   background-image: url("../img/image2.jpg"), linear-gradient($green-transparent, $green-transparent);
   background-blend-mode: overlay;
   background-size: contain;
-  background-position: 10% 90%;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -16,24 +16,36 @@
     background-size: cover;
     flex-direction: row;
   }
+
+  @media (min-width: 1440px) {
+    grid-column: 2/-1;
+    grid-row: -1/-2;
+    align-items: end;
+    align-self: end;
+  }
 }
+
 .extra-gift__wrapper {
   margin-bottom: 35px;
 }
 
 .extra-gift__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: $Arial;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: $White;
-  width: 161px;
-  padding-bottom: 43px;
+  width: 60%;
   margin: 0;
 
-  @media (min-width: 768px) {
-    padding: 0;
-    margin-right: 124px;
+  @media (min-width: 768px) and (max-width: 1439px) {
+    transform: translateX(0);
+    left: 420px;
+    transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
   }
@@ -41,7 +53,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 59px;
+    top: -150%;
     left: 50%;
     transform: translateX(-50%);
     width: 78px;
@@ -49,5 +61,11 @@
     background-image: url("../img/icon_gift.svg");
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-width: 768px) and (max-width: 1439px) {
+      top: 50%;
+      transform: translateY(-50%);
+      left: -300px;
+    }
   }
 }

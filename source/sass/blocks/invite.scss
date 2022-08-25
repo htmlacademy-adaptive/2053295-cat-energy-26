@@ -5,11 +5,8 @@
 }
 
 .invite {
-
   &_tinted {
     background-color: $Concrete;
-
-
   }
 }
 
@@ -17,10 +14,10 @@
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 26px 0;
+  padding: 25px 0;
 
   @media (min-width: 768px) {
-    padding: 60px 40px 56px;
+    padding: 60px 70px 56px;
   }
 
   @media (min-width: 1440px) {

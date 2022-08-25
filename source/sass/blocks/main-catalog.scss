@@ -4,4 +4,17 @@
   line-height: 36px;
   color: $Black;
   margin: 0 0 21px;
+
+  @media (min-width: 1440px) {
+    grid-column: 1/-1;
+  }
+}
+
+.main-catalog__container {
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 80px;
+  }
 }

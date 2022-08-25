@@ -1,3 +1,8 @@
+.products {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+
 .products__list {
   list-style-type: none;
   margin: 0;
@@ -26,7 +31,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    // align-items: center;
     border: none;
   }
 }

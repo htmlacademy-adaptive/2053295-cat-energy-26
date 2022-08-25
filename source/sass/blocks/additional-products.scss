@@ -1,9 +1,22 @@
+.additional-products {
+  @media (min-width: 1440px) {
+    grid-column: 1/2;
+    grid-row: -1/-2;
+  }
+}
+
 .additional-products__wrapper {
   padding: 25px 0 0;
+
   @media (min-width: 768px) {
     padding: 25px 38px 0;
   }
+
+  @media (min-width: 768px) {
+    padding: 25px 0 0;
+  }
 }
+
 .additional-products__title {
   font-weight: 400;
   font-size: 24px;
@@ -19,7 +32,8 @@
 
 .additional-products__item {
   padding: 13px 0 18px;
- border-top: 1px solid $Silver;
+  border-top: 1px solid $Silver;
+
   &:last-child {
     border-bottom: 1px solid $Silver;
   }

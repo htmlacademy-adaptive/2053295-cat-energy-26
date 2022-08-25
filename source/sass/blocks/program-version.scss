@@ -141,6 +141,10 @@
     right: 0;
     bottom: 0;
     width: 25px;
+
+    @media (min-width: 768px) {
+      left: 85%;
+    }
   }
 
   @media (min-width: 768px) {
@@ -148,5 +152,8 @@
     border: none;
     font-size: 20px;
     line-height: 30px;
+  }
+  @media (min-width: 1440px) {
+    width: 35%;
   }
 }
