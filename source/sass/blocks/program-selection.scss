@@ -11,9 +11,11 @@
   border: none;
   border-bottom: 1px solid $Alto;
   padding: 0 0 65px;
+
   &:last-child {
     border: none;
   }
+
   @media (min-width: 768px) {
     border: none;
   }
@@ -46,10 +48,10 @@
   text-align: center;
   margin: 0;
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: 1440px) {
-justify-content: flex-start;
+    justify-content: flex-start;
   }
 }

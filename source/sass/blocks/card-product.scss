@@ -2,13 +2,6 @@
   display: grid;
   grid-template-columns: repeat(3, 50% 25% 25%);
   grid-template-rows: repeat(3, auto);
-
-  @media (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
 }
 
 .card-product__picture-link {
