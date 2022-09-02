@@ -8,6 +8,10 @@
       margin-right: 0;
     }
   }
+
+  @media (min-width: 1440px) {
+    margin-right: 35px;
+  }
 }
 
 .menu__link {
@@ -33,18 +37,23 @@
     &_active {
       border-color: $Apple;
     }
-  }
 
+
+
+    @media (min-width: 1440px) {
+      font-size: 20px;
+      line-height: 30px;
+
+      &_bleached {
+        color: $White;
+      }
+
+      &_active_bleached {
+        border-color: $White;
+      }
+    }
+  }
   @media (min-width: 1440px) {
-    font-size: 20px;
-    line-height: 30px;
-
-    &_bleached {
-      color: $White;
+      padding: 5px 0 6px;
     }
-
-    &_active_bleached {
-      border-color: $White;
-    }
-  }
 }

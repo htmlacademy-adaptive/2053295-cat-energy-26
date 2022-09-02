@@ -67,9 +67,10 @@
 
     @media (min-width: 768px) {
       left: auto;
-      right: 162px;
+      top: 2px;
+      right: 109px;
       width: 200px;
-      height: 211px;
+      height: 208px;
       transform: translate(50%, 0%);
     }
 
@@ -89,14 +90,14 @@
 
       @media (min-width: 768px) {
         width: 268px;
-        height: 200px;
+        height: 222px;
+        right: 110px;
       }
 
       @media (min-width: 1440px) {
-        top: 50%;
-        left: 0;
-        width: 100px;
-        height: 106px;
+        top: 56%;
+        left: -18px;
+        width: 134px;
         transform: translateY(-50%);
       }
     }
