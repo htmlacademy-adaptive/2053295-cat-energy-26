@@ -2,7 +2,7 @@
   list-style-type: none;
 
   @media (min-width: 768px) {
-    margin-right: 35px;
+    margin-right: 37px;
 
     &:last-child {
       margin-right: 0;
@@ -24,8 +24,8 @@
   border-bottom: 1px solid transparent;
 
   @media (min-width: 768px) {
-    display: inline-block;
-    padding: 11px 0;
+    display: block;
+    padding: 10px 0;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;

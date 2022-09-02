@@ -14,7 +14,7 @@
 
   &_image {
     @media (min-width: 768px) {
-      padding: 8px calc(12 / 768 * 100vw) 8px 0;
+      padding: 6px calc(12 / 768 * 100vw) 8px 0;
     }
 
     @media (min-width: 1440px) {
@@ -24,7 +24,7 @@
 
   &_text {
     @media (min-width: 768px) {
-      padding: 13px 0;
+      // padding: 18px 0;
     }
   }
 }

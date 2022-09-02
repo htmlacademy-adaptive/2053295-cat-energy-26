@@ -10,7 +10,7 @@
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 63px 0;
+    padding: 60px 0;
   }
 
   @media (min-width: 1440px) {
@@ -42,7 +42,7 @@
 
   @media (min-width: 768px) {
     border-bottom: none;
-    padding: 0;
+    padding: 0 0 0 24px;
   }
 }
 
