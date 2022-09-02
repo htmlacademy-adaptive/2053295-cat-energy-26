@@ -220,9 +220,10 @@
 }
 
 .living-example__slider {
-@media (min-width: 768px) {
+  @media (min-width: 768px) {
     padding-bottom: 98px;
   }
+
   @media (min-width: 1440px) {
     grid-column: 2 / -1;
     grid-row: 1 / -1;
