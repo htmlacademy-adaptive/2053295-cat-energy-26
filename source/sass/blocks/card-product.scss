@@ -1,7 +1,23 @@
 .card-product {
   display: grid;
-  grid-template-columns: repeat(3, 50% 25% 25%);
+  grid-template-columns: 50% 25% 25%;
   grid-template-rows: repeat(3, auto);
+
+  @media (min-width: 768px) {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(4, auto);
+
+  }
+}
+
+.card-product__picture {
+  //   @media (min-width: 768px) {
+  // position: relative;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // height: 210px;
+  //   }
 }
 
 .card-product__picture-link {
@@ -13,9 +29,23 @@
 
 
   @media (min-width: 768px) {
-    width: 100%;
-    min-height: 200px;
-    margin-bottom: 35px;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    align-items: flex-end;
+  }
+
+  &_small {
+    @media (min-width: 768px) {
+      min-height: 204px;
+      margin-bottom: 31px;
+    }
+  }
+
+  &_big {
+    @media (min-width: 768px) {
+      min-height: 212px;
+      margin-bottom: 25px;
+    }
   }
 }
 
@@ -24,6 +54,12 @@
   grid-column: 2/4;
   grid-row: 1/2;
   text-decoration: none;
+
+  @media (min-width: 768px) {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    align-self: start;
+  }
 }
 
 .card-product__title {
@@ -38,8 +74,8 @@
 
   @media (min-width: 768px) {
     font-size: 20px;
-    line-height: 21px;
-    width: 80%;
+    line-height: 24px;
+    width: 49%;
     margin: 0 auto;
     text-align: center;
 
@@ -65,14 +101,29 @@
   color: $Tundora;
 
   @media (min-width: 768px) {
-    width: 100%;
     font-size: 16px;
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    padding: 12px 37px 33px;
   }
 }
-
+.card-product__item {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $Silver;
+  padding: 7px 0 8px;
+}
 .card-product__term {
   padding: 9px 0;
   border-bottom: 1px solid $Silver;
+
+  @media (min-width: 768px) {
+    // margin-bottom: 15px;
+    padding: 0;
+    border-bottom: none;
+  }
 }
 
 .card-product__description {
@@ -80,6 +131,11 @@
   border-bottom: 1px solid $Silver;
   margin: 0;
   text-align: right;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    border-bottom: none;
+  }
 }
 
 .card-product__button {
@@ -87,6 +143,9 @@
   grid-row: 3/4;
 
   @media (min-width: 768px) {
-    width: 100%;
+    width: 248px;
+    grid-column: 1/-1;
+    grid-row: 4/5;
+    margin: 0 auto;
   }
 }
