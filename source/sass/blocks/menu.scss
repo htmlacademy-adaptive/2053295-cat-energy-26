@@ -38,8 +38,6 @@
       border-color: $Apple;
     }
 
-
-
     @media (min-width: 1440px) {
       font-size: 20px;
       line-height: 30px;
@@ -53,7 +51,8 @@
       }
     }
   }
+
   @media (min-width: 1440px) {
-      padding: 5px 0 6px;
-    }
+    padding: 5px 0 6px;
+  }
 }
