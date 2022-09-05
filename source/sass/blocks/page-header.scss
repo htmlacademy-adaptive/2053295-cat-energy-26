@@ -4,7 +4,6 @@
   &_absolute {
     @media (min-width: 1440px) {
       position: absolute;
-      padding: 29px 0 0;
       z-index: 10;
     }
   }
@@ -12,4 +11,8 @@
 
 .page-header__container {
   padding: 19px 0 18px;
+
+  @media (min-width: 1440px) {
+    padding: 48px 0 29px;
+  }
 }

@@ -29,12 +29,22 @@
       min-height: 204px;
       margin-bottom: 31px;
     }
+
+    @media (min-width: 1440px) {
+      min-height: 202px;
+      margin-bottom: 37px;
+    }
   }
 
   &_big {
     @media (min-width: 768px) {
       min-height: 212px;
       margin-bottom: 25px;
+    }
+
+    @media (min-width: 1440px) {
+      min-height: 205px;
+      margin-bottom: 34px;
     }
   }
 }
@@ -65,13 +75,12 @@
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 24px;
-    width: 49%;
+    // width: 49%;
     margin: 0 auto;
     text-align: center;
+  }
+  @media (min-width: 1440px) {
 
-    br {
-      display: none;
-    }
   }
 }
 
@@ -95,6 +104,10 @@
     grid-column: 1/-1;
     grid-row: 3/4;
     padding: 12px 37px 33px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 16px 0 31px;
   }
 }
 
@@ -138,5 +151,17 @@
     grid-column: 1/-1;
     grid-row: 4/5;
     margin: 0 auto;
+  }
+
+  @media (min-width: 1440px) {
+    width: 100%;
+  }
+}
+
+.line-break {
+  display: block;
+
+  @media (min-width: 768px) {
+    display: none;
   }
 }
