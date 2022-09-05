@@ -1,7 +1,5 @@
 .extra-gift {
   position: relative;
-  width: 100%;
-  height: 290px;
   background-image: url("../img/image2.jpg"), linear-gradient($green-transparent, $green-transparent);
   background-blend-mode: overlay;
   background-size: contain;
@@ -27,6 +25,11 @@
 
 .extra-gift__wrapper {
   margin-bottom: 35px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 76px;
+    min-height: 200px;
+  }
 }
 
 .extra-gift__text {
@@ -42,12 +45,20 @@
   width: 60%;
   margin: 0;
 
-  @media (min-width: 768px) and (max-width: 1439px) {
-    transform: translate(0 -50%);
-    left: 420px;
+  @media (min-width: 768px) {
+    top: 72px;
+    left: 635px;
     display: flex;
     justify-content: space-between;
+    text-align: left;
   }
+
+  // @media (min-width: 768px) and (max-width: 1439px) {
+  //   transform: translate(0 -50%);
+  //   left: 420px;
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
 
   &::before {
     content: "";
@@ -62,9 +73,15 @@
     background-size: contain;
 
     @media (min-width: 768px) and (max-width: 1439px) {
-      top: 50%;
+      top: 45%;
       transform: translateY(-50%);
-      left: -300px;
+      left: -344px;
     }
+
+    // @media (min-width: 768px) and (max-width: 1439px) {
+    //   top: 50%;
+    //   transform: translateY(-50%);
+    //   left: -300px;
+    // }
   }
 }
