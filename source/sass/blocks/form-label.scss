@@ -1,0 +1,11 @@
+.form-label {
+  font-size: 16px;
+  line-height: 18px;
+  color: $Tundora;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

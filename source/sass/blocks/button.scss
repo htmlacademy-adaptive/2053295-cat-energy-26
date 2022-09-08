@@ -1,10 +1,43 @@
 .button {
-  display: block;
-  padding: 0;
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
+   display: block;
+  box-sizing: border-box;
   border: none;
+  padding: 11px 10px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: inherit;
+  line-height: 20px;
+  color: $White;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:focus {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-offset: 1px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &_green {
+    background-color: $Apple;
+
+    &:hover,
+    &:active {
+      background-color: $Apple-Dark;
+    }
+
+    &:active {
+      color: $White;
+    }
+
+    &:focus {
+      outline-color: $Apple-Dark;
+    }
+  }
 }
 
 .button__line {
