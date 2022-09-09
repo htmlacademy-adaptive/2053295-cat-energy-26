@@ -176,26 +176,21 @@
           </dl>
         </div>
         <figure class="living-example__slider slider">
-          <div class="slider__wrapper slider__wrapper_before">
-            <picture class="slider__image slider__image_before">
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/cat-before-tablet@1x.webp 1x, img/cat-before-tablet@2x.webp 2x" width="560" height="512">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before-tablet@1x.webp 1x, img/cat-before-tablet@2x.webp 2x" width="560" height="512">
-              <source type="image/webp" srcset="img/cat-before-mobile@1x.webp 1x, img/cat-before-mobile@2x.webp 2x">
-              <source media="(min-width: 1440px)" srcset="img/cat-before-tablet@1x.png 1x, img/cat-before-tablet@2x.png 2x" width="560" height="512">
-              <source media="(min-width: 768px)" srcset="img/cat-before-tablet@1x.png 1x, img/cat-before-tablet@2x.png 2x" width="562" height="515">
-              <img class="promo__image" src="img/cat-before-mobile@1x.png" srcset="img/cat-before-mobile@2x.png 2x" alt="Толстый кот." width="280" height="256">
+          <picture class="slider__image">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/slides-desktop@1x.webp 1x, img/slides-desktop@2x.webp 2x" width="561" height="512">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/slides-tablet@1x.webp 1x, img/slides-tablet@2x.webp 2x" width="560" height="512">
+            <source type="image/webp" srcset="img/slides-mobile@1x.webp 1x, img/slides-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/slides-desktop@1x.png 1x, img/slides-desktop@2x.png 2x" width="561" height="512">
+            <source media="(min-width: 768px)" srcset="img/slides-tablet@1x.png 1x, img/slides-tablet@2x.png 2x" width="560" height="512">
+            <img class="slider__picture" src="img/slides-mobile@1x.png" srcset="img/slides-mobile@2x.png 2x" width="280" height="256" alt="Кошачий корм Кэт Энерджи.">
+          </picture>
+          <button class="slider__button" type="button">
+            <picture class="slider__picture">
+              <source media="(min-width: 1440px)" srcset="img/separator-desktop.svg" width="40" height="512">
+              <source media="(min-width: 768px)" srcset="img/separator-tablet.svg" width="40" height="512">
+              <img class="slider__picture" src="img/separator-mobile.svg" width="40" height="256" alt="Разделитель слайдера.">
             </picture>
-          </div>
-          <div class="slider__wrapper slider__wrapper_after">
-            <picture class="slider__image slider__image_after">
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/cat-after-tablet@1x.webp 1x, img/cat-after-tablet@2x.webp 2x" width="560" height="512">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-after-tablet@1x.webp 1x, img/cat-after-tablet@2x.webp 2x" width="560" height="512">
-              <source type="image/webp" srcset="img/cat-after-mobile@1x.webp 1x, img/cat-after-mobile@2x.webp 2x">
-              <source media="(min-width: 1440px)" srcset="img/cat-after-tablet@1x.png 1x, img/cat-after-tablet@2x.png 2x" width="560" height="512">
-              <source media="(min-width: 768px)" srcset="img/cat-after-tablet@1x.png 1x, img/cat-after-tablet@2x.png 2x" width="562" height="515">
-              <img class="promo__image" src="img/cat-after-mobile@1x.png" srcset="img/cat-after-mobile@2x.png 2x" alt="Стройный кот." width="280" height="256">
-            </picture>
-          </div>
+          </button>
         </figure>
       </div>
     </section>

@@ -1,40 +1,61 @@
+// .slider {
+// position: relative;
+// overflow: hidden;
+// margin: 0 auto;
+// display: flex;
+// justify-content: space-between;
+// align-items: center;
+
+// @media (min-width: 768px) {
+//   width: 560px;
+// }
+
+// &::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   right: 0;
+//   bottom: 98px;
+//   z-index: 25;
+//   background-image: url("../img/curtain-tablet.svg");
+//   background-position: center;
+//   background-size: contain;
+//   background-repeat: no-repeat;
+// }
+// }
+
+// .slider__wrapper {
+//   position: relative;
+//   top: 0;
+
+//   &_before {
+//     left: 25%;
+//   }
+
+//   &_after {
+//     right: 25%;
+//   }
+// }
 .slider {
   position: relative;
-  overflow: hidden;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-
-  @media (min-width: 768px) {
-    width: 560px;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    right: 0;
-    bottom: 98px;
-    z-index: 25;
-    background-image: url("../img/curtain-tablet.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
 }
 
-.slider__wrapper {
-  position: relative;
+.slider__button {
+  position: absolute;
+  padding: 0;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  border: none;
+  height: 256px;
 
-  &_before {
-    left: 25%;
-  }
-
-  &_after {
-    right: 25%;
+  @media (min-width: 768px) {
+    height: 512px;
   }
 }
