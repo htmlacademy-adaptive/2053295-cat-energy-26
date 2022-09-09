@@ -27,15 +27,14 @@
 }
 
 .slider__wrapper {
-  width: 50%;
-  overflow: hidden;
-  display: flex;
+  position: relative;
+  top: 0;
 
   &_before {
-    justify-content: flex-start;
+    left: 25%;
   }
 
   &_after {
-    justify-content: flex-end;
+    right: 25%;
   }
 }
