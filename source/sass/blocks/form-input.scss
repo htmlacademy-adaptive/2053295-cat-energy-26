@@ -1,7 +1,6 @@
 .form-input {
   box-sizing: border-box;
   border: 1px solid $Mercury;
-  padding: 12px 15px;
   min-height: 46px;
   font-family: inherit;
   font-size: 16px;
@@ -9,6 +8,8 @@
   color: $Tundora;
   text-transform: uppercase;
   outline: none;
+  transition-property: border-color, outline, fill, stroke;
+  transition-duration: 0.3s;
 
   @media (min-width: 768px) {
     padding: 9px 18px;
@@ -29,6 +30,8 @@
   &:focus:invalid {
     border-color: $Vivid-Tangerine;
     outline: 1px solid $Vivid-Tangerine;
+    fill: $Apple;
+    stroke: $Apple;
   }
 
   &::placeholder {

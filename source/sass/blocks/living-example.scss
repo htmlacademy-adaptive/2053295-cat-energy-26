@@ -17,6 +17,8 @@
 }
 
 .living-example__container {
+  margin-bottom: 36px;
+
   @media (min-width: 1440px) {
     display: grid;
     grid-template-columns: 440px 50%;
@@ -51,7 +53,7 @@
 
 .living-example__text {
   font-family: $Arial;
-  margin: 0;
+  margin: 0 0 20px 0;
 
   @media (min-width: 768px) {
     font-size: 16px;
@@ -68,12 +70,12 @@
 }
 
 .living-example__inner {
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(2, auto);
-  grid-column-gap: calc(32 / 280 * 100%);
-  grid-row-gap: 20px;
+  grid-column-gap: 16px;
+  grid-row-gap: 34px;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) {
     grid-template-columns: 162px 162px 1fr;
@@ -87,8 +89,8 @@
     grid-row: 3 / 5;
     grid-template-columns: repeat(2, 162px);
     grid-template-rows: 74px 55px;
-    column-gap: 42px;
-    row-gap: 41px;
+    grid-column-gap: 42px;
+    grid-row-gap: 41px;
     margin-bottom: 45px;
   }
 }
@@ -100,9 +102,10 @@
   justify-content: center;
   align-items: center;
   margin: 0;
+  padding: 15px 0 7px;
   border: 1px solid $Silver;
   border-radius: 3px;
-
+  width: 122px;
 
   &_left {
     grid-column: 1 / 2;
@@ -123,15 +126,14 @@
 .living-example__term {
   position: absolute;
   left: 50%;
-  bottom: -12px;
+  bottom: -27px;
   transform: translate(-50%, -50%);
   font-family: $Arial;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  margin-bottom: 11px;
   color: $Tundora;
-  width: 70%;
+  width: 67%;
   display: inline;
   background-color: $White;
 
@@ -159,14 +161,15 @@
 }
 
 .living-example__consumption {
-  margin: 0 auto 40px;
+  margin: 0;
   text-align: center;
   line-height: 20px;
   text-transform: uppercase;
   color: $Black;
-  width: 100%;
   grid-column: 1 / -1;
   grid-row: 2 / -1;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: 768px) {
     margin: 0;
@@ -191,9 +194,15 @@
   }
 
   &_term {
+    padding: 0 3px 0 0;
+    letter-spacing: 0.1px;
+
     @media (min-width: 768px) {
       grid-column: 1 / -1;
       grid-row: 1 / -1;
+      margin: 0;
+      text-align: right;
+      padding: 0;
     }
 
     @media (min-width: 1440px) {
@@ -205,6 +214,7 @@
 
   &_defenition {
     display: inline;
+    text-align-last: left;
 
     @media (min-width: 768px) {
       grid-column: 1 / -1;
@@ -222,6 +232,8 @@
 }
 
 .living-example__slider {
+  margin: 0;
+
   @media (min-width: 768px) {
     padding-bottom: 98px;
   }

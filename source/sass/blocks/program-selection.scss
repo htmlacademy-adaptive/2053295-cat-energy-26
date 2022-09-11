@@ -1,5 +1,4 @@
 .program-selection {
-  padding-top: 6px;
   padding-bottom: 31px;
 
   @media (min-width: 768px) {
@@ -28,9 +27,7 @@
 }
 
 .program-selection__parameters {
-  margin-bottom: 18px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  margin-bottom: 22px;
 
   @media (min-width: 768px) {
     margin-bottom: 56px;
@@ -46,7 +43,7 @@
 
 .program-selection__programs {
   margin-bottom: 28px;
-  padding: 20px var(--content-padding-mobile);
+  padding: 22px 0 18px 0;
   border-top: 1px solid $Alto;
   border-bottom: 1px solid $Alto;
 
@@ -68,8 +65,8 @@
 }
 
 .program-selection__contacts {
-  margin-bottom: 10px;
-  padding-top: 33px;
+  margin-bottom: 7px;
+  padding-top: 37px;
   padding-bottom: 18px;
 
   @media (min-width: 768px) {
@@ -85,7 +82,7 @@
 }
 
 .program-selection__message {
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 
   @media (min-width: 768px) {
     margin-bottom: 65px;
@@ -98,9 +95,8 @@
 }
 
 .program-selection__additional {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   padding-top: 34px;
-  padding-bottom: 22px;
 
   @media (min-width: 768px) {
     padding-top: 57px;
@@ -123,12 +119,14 @@
 }
 
 .program-selection__list {
-  display: grid;
-  row-gap: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
   padding: 0;
 
   @media (min-width: 768px) {
-    row-gap: 20px;
+    // row-gap: 20px;
     padding-left: 40px;
     padding-right: 37px;
   }
@@ -160,6 +158,8 @@
 }
 
 .program-selection__list_additional {
+  padding-top: 6px;
+
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, minmax(285px, 500px));
     row-gap: 32px;
@@ -178,10 +178,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &_additional {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .program-selection__label {
-  margin-right: 14px;
+  margin-right: 13px;
+  padding-bottom: 6px;
+
+  &_radio {
+    padding: 6px 0 6px 46px;
+  }
+
+  &_long {
+    margin-right: 15px;
+  }
 
   @media (min-width: 768px) {
     margin-right: 20px;
@@ -190,6 +212,7 @@
 
 .program-selection__input {
   flex-grow: 1;
+  padding: 12px 0 14px 14px;
 
   &_contacts {
     padding-right: 46px;
@@ -208,32 +231,37 @@
   stroke: $Mine-Shaft;
 }
 
-.program-selection__input:focus + .program-selection__image {
+.program-selection__image_phone {
+
+  fill: $Mine-Shaft;
+}
+
+.program-selection__input:focus+.program-selection__image {
   stroke: $Apple;
 }
 
-.program-selection__input:focus:invalid + .program-selection__image {
+.program-selection__input:focus:invalid+.program-selection__image {
   stroke: $Vivid-Tangerine;
 }
 
-.program-selection__radio:checked + .program-selection__label_radio::after,
-.program-selection__checkbox:checked + .program-selection__label_checkbox::after {
+.program-selection__radio:checked+.program-selection__label_radio::after,
+.program-selection__checkbox:checked+.program-selection__label_checkbox::after {
   content: "";
 }
 
-.program-selection__radio:focus + .program-selection__label_radio,
-.program-selection__checkbox:focus + .program-selection__label_checkbox {
+.program-selection__radio:focus+.program-selection__label_radio,
+.program-selection__checkbox:focus+.program-selection__label_checkbox {
   outline: 1px dashed $Silver;
   outline-offset: 2px;
 }
 
-.program-selection__radio:disabled + .program-selection__label_radio,
-.program-selection__checkbox:disabled + .program-selection__label_checkbox {
+.program-selection__radio:disabled+.program-selection__label_radio,
+.program-selection__checkbox:disabled+.program-selection__label_checkbox {
   opacity: 0.5;
 }
 
 .program-selection__message-wrapper {
-  margin-top: 33px;
+  margin-top: 36px;
 
   @media (min-width: 768px) {
     margin-top: 73px;
@@ -280,6 +308,7 @@
 
 .program-selection__button {
   width: 100%;
+  margin-bottom: 18px;
 
   @media (min-width: 768px) {
     padding: 16px 10px;
@@ -288,7 +317,7 @@
 }
 
 .program-selection__notification {
-  margin-bottom: 0;
+  margin: 0;
   font-family: $Arial;
   text-align: center;
 

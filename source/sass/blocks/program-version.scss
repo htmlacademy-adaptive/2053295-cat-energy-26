@@ -12,7 +12,7 @@
   background-color: $Concrete;
   list-style-type: none;
   margin-bottom: 20px;
-  padding: 23px 23px 0;
+  padding: 30px 20px 0;
 
   &:last-child {
     margin-bottom: 0;
@@ -38,7 +38,7 @@
   text-transform: uppercase;
   color: $Black;
   margin: 0 0 29px;
-  padding-left: 80px;
+  padding-left: 70px;
 
   @media (min-width: 768px) {
     padding-left: 0;
@@ -59,10 +59,10 @@
     background-size: contain;
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 47%;
     background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
+    width: 54px;
+    height: 54px;
     transform: translateY(-50%);
 
     @media (min-width: 768px) {
@@ -84,9 +84,14 @@
   }
 
   &_walking-cat {
+    padding-left: 70px;
+
     &::before {
+      left: -7px;
+      top: 52%;
       background-image: url("../img/cat_back1.svg");
       width: 67px;
+      height: 67px;
 
       @media (min-width: 768px) {
         width: 268px;
@@ -106,7 +111,7 @@
 
 .program-version__text {
   font-family: $Arial;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 
   @media (min-width: 768px) {
     width: 57%;
@@ -124,13 +129,19 @@
 .program-version__link {
   display: block;
   position: relative;
-  padding: 18px 0;
+  padding: 20px 0;
   border-top: 1px solid $Alto;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
   color: $Black;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::after {
     content: "";

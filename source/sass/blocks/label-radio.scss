@@ -8,10 +8,6 @@
     padding-left: 59px;
   }
 
-  &:active {
-    opacity: 0.3;
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -24,6 +20,8 @@
     border: 1px solid $Silver;
     border-radius: 50%;
     background-color: $White;
+    transition-property: border-color;
+    transition-duration: 0.3s;
 
     @media (min-width: 768px) {
       width: 40px;
@@ -51,5 +49,10 @@
 
   &:hover::before {
     border-color: $Silver-Dark;
+  }
+
+  &:disabled::before {
+    border-color: $Silver-Dark;
+    opacity: 0.3;
   }
 }

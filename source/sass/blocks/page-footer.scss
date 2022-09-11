@@ -23,7 +23,21 @@
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid $Alto;
-  padding: 32px 0;
+  padding: 32px 0 31px 0;
+  transition-property: fill, opacity;
+  transition-duration: 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 
   @media (min-width: 768px) {
     border-bottom: none;
@@ -33,12 +47,12 @@
 
 .page-footer__social {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
   border-bottom: 1px solid $Alto;
-  margin: 0;
-  padding: 0;
+  margin: 0 78px 0 75px;
+  padding: 22px 0px 18px 0;
 
   @media (min-width: 768px) {
     border-bottom: none;
@@ -51,6 +65,28 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+  fill: $Dove-Gray;
+  transition-property: fill, opacity;
+  transition-duration: 0.3s;
+  padding: 22px 0;
+
+  &:hover {
+    fill: $Apple;
+  }
+
+  &:active {
+    fill: $Apple;
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    fill: $Apple;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__academy-picture {
+  fill: inherit;
 }
 
 .page-footer__text {
@@ -60,7 +96,6 @@
   font-size: 16px;
   line-height: 18px;
   color: $Tundora;
-  padding: 22px 0;
 
   @media (min-width: 768px) {
     margin-right: 22px;

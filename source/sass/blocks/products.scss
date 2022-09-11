@@ -26,16 +26,18 @@
 }
 
 .products__item {
-  padding: 19px 0 13px;
+  padding: 19px 0 0;
   border-top: 1px solid $Gallery-Dark;
-  background: linear-gradient(to top, $Concrete, $Concrete 85%, $White 85%, $White);
+  margin: 0 0 25px;
 
   &:last-child {
     background: none;
+    margin: 0;
   }
 
   @media (min-width: 768px) {
     padding: 0 0;
+    background: linear-gradient(to top, $Concrete, $Concrete 85%, $White 85%, $White);
   }
 
   @media (min-width: 1440px) {

@@ -1,5 +1,5 @@
 .product-description__wrapper {
-  padding-top: 25px;
+  padding-top: 22px;
 
   @media (min-width: 768px) {
     padding-top: 46px;
@@ -11,7 +11,7 @@
 }
 
 .product-description__title {
-  margin: 0 0 40px;
+  margin: 0 0 39px;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -51,6 +51,9 @@
   list-style: none;
   margin-bottom: 20px;
   min-height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
   &:last-child {
     margin-bottom: 50px;

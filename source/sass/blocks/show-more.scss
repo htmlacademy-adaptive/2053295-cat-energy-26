@@ -1,13 +1,14 @@
 .show-more__wrapper {
   height: 100%;
   background-image: url("../img/plus.svg");
-  background-position: 50% 32%;
-  background-size: 18%;
+  background-position: 50% 3%;
+  background-size: 11%;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  padding: 58px 0 0;
 
   @media (min-width: 1440px) {
     background-position: 50% 31%;
@@ -68,6 +69,16 @@
   border: none;
   width: 100%;
   padding: 10px 0;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+
+  &:hover {
+    background-color: $Gallery-Dark;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 .line-break {

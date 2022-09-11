@@ -11,6 +11,8 @@
 
 .navigation__logo {
   display: block;
+  transition-property: opacity;
+  transition-duration: 0.3s;
 
   &_image {
     @media (min-width: 768px) {
@@ -26,6 +28,14 @@
     @media (min-width: 1440px) {
       padding: 3px 0 0;
     }
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 

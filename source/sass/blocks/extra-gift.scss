@@ -25,6 +25,7 @@
 
 .extra-gift__wrapper {
   margin-bottom: 35px;
+  min-height: 288px;
 
   @media (min-width: 768px) {
     margin-bottom: 76px;
@@ -39,7 +40,7 @@
 
 .extra-gift__text {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translateX(-50%);
   font-family: $Arial;
@@ -68,7 +69,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: -150%;
+    top: -215%;
     left: 50%;
     transform: translateX(-50%);
     width: 78px;
