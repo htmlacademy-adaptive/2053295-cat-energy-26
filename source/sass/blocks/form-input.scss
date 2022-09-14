@@ -1,41 +1,46 @@
 .form-input {
   box-sizing: border-box;
   border: 1px solid $Mercury;
-  min-height: 46px;
+  padding: 13px 15px;
   font-family: inherit;
   font-size: 16px;
   line-height: 18px;
   color: $Tundora;
   text-transform: uppercase;
   outline: none;
-  transition-property: border-color, outline, fill, stroke;
-  transition-duration: 0.3s;
 
   @media (min-width: 768px) {
-    padding: 9px 18px;
-    min-height: 52px;
+    padding: 9px 18px 11px;
     font-size: 20px;
     line-height: 30px;
   }
 
   &:hover {
     border-color: $Silver;
+    background-color: $White;
   }
 
   &:focus {
     border-color: $Tundora;
     outline: 1px solid $Tundora;
+    background-color: $White;
   }
 
   &:focus:invalid {
     border-color: $Vivid-Tangerine;
     outline: 1px solid $Vivid-Tangerine;
-    fill: $Apple;
-    stroke: $Apple;
   }
 
   &::placeholder {
     color: inherit;
     opacity: 1;
+  }
+}
+
+.form-input__textarea {
+  padding: 8px 14px;
+
+  @media (min-width: 768px) {
+    padding: 8px 17px;
   }
 }

@@ -75,9 +75,18 @@
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 24px;
-    // width: 49%;
     margin: 0 auto;
     text-align: center;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 3px;
+  }
+}
+
+.card-product__title-span {
+  @media (min-width: 1440px) {
+    padding-left: 4px;
   }
 }
 
@@ -100,11 +109,12 @@
     font-size: 16px;
     grid-column: 1/-1;
     grid-row: 3/4;
-    padding: 12px 37px 33px;
+    padding: 22px 37px 24px;
+    margin: 0;
   }
 
   @media (min-width: 1440px) {
-    padding: 16px 0 31px;
+    padding: 22px 0 24px;
   }
 }
 
@@ -113,6 +123,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: 768px) {
+    margin-bottom: 8px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid $Silver;
+  }
 }
 
 .card-product__term {

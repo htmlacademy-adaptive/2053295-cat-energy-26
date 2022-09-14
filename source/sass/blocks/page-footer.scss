@@ -10,11 +10,11 @@
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 60px 0;
+    padding: 66px 0;
   }
 
   @media (min-width: 1440px) {
-    padding: 57px 0;
+    padding: 40px 0;
   }
 }
 
@@ -52,7 +52,7 @@
   list-style: none;
   border-bottom: 1px solid $Alto;
   margin: 0 78px 0 75px;
-  padding: 22px 0px 18px 0;
+  padding: 22px 0 18px 0;
 
   @media (min-width: 768px) {
     border-bottom: none;

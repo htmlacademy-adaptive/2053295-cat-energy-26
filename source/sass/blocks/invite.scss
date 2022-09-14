@@ -18,7 +18,7 @@
 
   @media (min-width: 768px) {
     width: 708px;
-    padding: 60px 40px 56px;
+    padding: 24px 40px 60px;
   }
 
   @media (min-width: 1440px) {
@@ -59,6 +59,7 @@
     font-size: 16px;
     align-items: end;
     text-align: right;
+    justify-content: space-between;
   }
 
   @media (min-width: 1440px) {
@@ -74,6 +75,10 @@
 .invite__street {
   display: block;
   margin-top: -2px;
+
+  @media (min-width: 768px) {
+    margin-top: -4px;
+  }
 }
 
 .invite__map {

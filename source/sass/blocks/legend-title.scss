@@ -6,7 +6,6 @@
   line-height: 24px;
 
   @media (min-width: 768px) {
-    margin-left: 40px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -15,35 +14,31 @@
     content: "";
     position: absolute;
     left: -100vw;
-    top: calc(50% - 1px);
-    right: calc(100% + 20px);
-    bottom: calc(50% - 1px);
+    top: 22px;
+    right: calc(100% + 40px);
+    bottom: calc(100% - 24px);
     background-color: $Apple;
 
     @media (min-width: 768px) {
-      right: calc(100% + 30px);
-    }
-
-    @media (min-width: 1440px) {
+      top: 22px;
       right: calc(100% + 40px);
+      bottom: calc(100% - 24px);
     }
   }
 
   &::after {
     content: "";
     position: absolute;
-    left: calc(100% + 20px);
-    top: calc(50% - 1px);
+    left: calc(100% + 21px);
+    top: 14px;
     right: -100vw;
-    bottom: calc(50% - 1px);
+    bottom: calc(100% - 16px);
     background-color: $Apple;
 
     @media (min-width: 768px) {
-      left: calc(100% + 30px);
-    }
-
-    @media (min-width: 1440px) {
       left: calc(100% + 40px);
+      top: 22px;
+      bottom: calc(100% - 24px);
     }
   }
 }

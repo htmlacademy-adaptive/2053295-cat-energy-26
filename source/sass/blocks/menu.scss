@@ -33,6 +33,12 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
 
     &_active {
       border-color: $Apple;
@@ -44,6 +50,12 @@
 
       &_bleached {
         color: $White;
+        &:hover {
+          opacity: 0.6;
+        }
+        &:active {
+          opacity: 0.3;
+        }
       }
 
       &_active_bleached {

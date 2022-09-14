@@ -106,11 +106,12 @@
 
   @media (min-width: 768px) {
     position: absolute;
-    left: 80px;
-    top: 238px;
-    width: 628px;
-    height: 604px;
+    left: 0;
+    top: 236px;
+    width: 707px;
+    height: 609px;
     z-index: -1;
+    margin-bottom: 0;
   }
 
   @media (min-width: 1440px) {

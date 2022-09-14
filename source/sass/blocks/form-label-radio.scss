@@ -1,27 +1,30 @@
-.label-radio {
+.form-label-radio {
   position: relative;
+  left: -8px;
   display: flex;
   align-items: center;
-  padding-left: 46px;
+  padding: 5px 0 5px 45px;
 
   @media (min-width: 768px) {
     padding-left: 59px;
   }
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &::before {
     content: "";
+    width: 30px;
+    height: 30px;
     position: absolute;
     box-sizing: border-box;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
     border: 1px solid $Silver;
     border-radius: 50%;
     background-color: $White;
-    transition-property: border-color;
-    transition-duration: 0.3s;
 
     @media (min-width: 768px) {
       width: 40px;
@@ -31,28 +34,23 @@
 
   &::after {
     content: none;
-    position: absolute;
-    left: 8px;
-    top: 50%;
-    transform: translateY(-50%);
     width: 14px;
     height: 14px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 50%;
     background-color: $Apple;
 
     @media (min-width: 768px) {
-      left: 11px;
       width: 18px;
       height: 18px;
+      left: 20px;
     }
   }
 
   &:hover::before {
     border-color: $Silver-Dark;
-  }
-
-  &:disabled::before {
-    border-color: $Silver-Dark;
-    opacity: 0.3;
   }
 }
