@@ -75,8 +75,8 @@
     </div>
     <form class="choice-form" action="https://echo.htmlacademy.ru/" method="post">
       <div class="choice-form__content-wrapper">
-        <fieldset class="choice-form__fieldset choice-form__parameters">
-          <div class="container container__parameters">
+        <div class="container container__parameters">
+          <fieldset class="choice-form__fieldset choice-form__parameters">
             <legend class="visually-hidden">Данные вашего кота</legend>
             <ul class="choice-form__list">
               <li class="choice-form__list-item">
@@ -92,27 +92,29 @@
                 <input class="choice-form__input form-input" type="text" id="catage" name="catage" placeholder="7">
               </li>
             </ul>
-          </div>
-        </fieldset>
-        <fieldset class="choice-form__fieldset choice-form__programs">
+          </fieldset>
+        </div>
+        <div class="choice-form__fieldset-box">
           <div class="container">
-            <legend class="visually-hidden">Вариант программы</legend>
-            <ul class="choice-form__list choice-form__list-program">
-              <li class="choice-form__list-item">
-                <input class="choice-form__radio" type="radio" id="programslim" name="program" checked>
-                <label class="choice-form__label-radio form-label-radio form-label" for="programslim">Похудение</label>
-              </li>
-              <li class="choice-form__list-item">
-                <input class="choice-form__radio" type="radio" id="programpro" name="program">
-                <label class="choice-form__label-radio form-label-radio form-label" for="programpro">Набор массы</label>
-              </li>
-              <li class="choice-form__list-item">
-                <input class="choice-form__radio" type="radio" id="programunknown" name="program">
-                <label class="choice-form__label-radio form-label-radio form-label" for="programunknown">Не знаю (Нужен ваш совет)</label>
-              </li>
-            </ul>
+            <fieldset class="choice-form__fieldset choice-form__programs">
+              <legend class="visually-hidden">Вариант программы</legend>
+              <ul class="choice-form__list choice-form__list-program">
+                <li class="choice-form__list-item">
+                  <input class="choice-form__radio" type="radio" id="programslim" name="program" checked>
+                  <label class="choice-form__label-radio form-label-radio form-label" for="programslim">Похудение</label>
+                </li>
+                <li class="choice-form__list-item">
+                  <input class="choice-form__radio" type="radio" id="programpro" name="program">
+                  <label class="choice-form__label-radio form-label-radio form-label" for="programpro">Набор массы</label>
+                </li>
+                <li class="choice-form__list-item">
+                  <input class="choice-form__radio" type="radio" id="programunknown" name="program">
+                  <label class="choice-form__label-radio form-label-radio form-label" for="programunknown">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
           </div>
-        </fieldset>
+        </div>
       </div>
       <fieldset class="choice-form__fieldset choice-form__contacts">
         <div class="container">
