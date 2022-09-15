@@ -10,7 +10,11 @@
 }
 
 .page-header__container {
-  padding: 19px 0 18px;
+  padding: 12px 0 1px;
+
+  @media (min-width: 768px) {
+    padding: 19px 0 18px;
+  }
 
   @media (min-width: 1440px) {
     padding: 48px 0 29px;

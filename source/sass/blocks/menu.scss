@@ -1,8 +1,10 @@
 .menu__item {
   list-style-type: none;
+  border-top: 1px solid $Mercury-Dark;
 
   @media (min-width: 768px) {
     margin-right: 37px;
+    border-top: none;
 
     &:last-child {
       margin-right: 0;
@@ -16,7 +18,7 @@
 
 .menu__link {
   display: block;
-  padding: 20px 0;
+  padding: 22px 0;
   font-family: $Oswald;
   font-weight: 500;
   font-size: 20px;
@@ -33,9 +35,11 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+
     &:hover {
       opacity: 0.6;
     }
+
     &:active {
       opacity: 0.3;
     }
@@ -50,9 +54,11 @@
 
       &_bleached {
         color: $White;
+
         &:hover {
           opacity: 0.6;
         }
+
         &:active {
           opacity: 0.3;
         }

@@ -25,8 +25,7 @@
 
   &:hover {
 
-    .separator_line,
-    .separator_arrows {
+    .separator_line, .separator_arrows {
       fill: $Apple;
     }
 
@@ -37,8 +36,7 @@
 
   &:active {
 
-    .separator_line,
-    .separator_arrows {
+    .separator_line, .separator_arrows {
       fill: $Apple;
       opacity: 0.6;
     }

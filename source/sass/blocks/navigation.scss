@@ -9,6 +9,14 @@
   }
 }
 
+.navigation__header {
+  padding: 0 0 12px 0;
+
+  @media (min-width: 768) {
+    padding: 0;
+  }
+}
+
 .navigation__logo {
   display: block;
   transition-property: opacity;
@@ -25,6 +33,8 @@
   }
 
   &_text {
+    padding: 3px 0 0 0;
+
     @media (min-width: 1440px) {
       padding: 3px 0 0;
     }
