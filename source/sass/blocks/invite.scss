@@ -23,7 +23,8 @@
 
   @media (min-width: 1440px) {
     position: absolute;
-    left: 110px;
+    left: 50%;
+    transform: translateX(-610px);
     top: 95px;
     width: 565px;
     background-color: $White;
@@ -82,10 +83,16 @@
 }
 
 .invite__map {
-  width: 100%;
+  width: 320px;
   height: 369px;
 
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+
   @media (min-width: 1440px) {
+    width: 1440px;
+    margin: 0 auto;
     height: 398px;
   }
 }

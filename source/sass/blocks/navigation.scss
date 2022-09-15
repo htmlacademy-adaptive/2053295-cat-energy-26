@@ -11,9 +11,15 @@
 
 .navigation__header {
   padding: 0 0 12px 0;
+  width: 280px;
+  margin: 0 auto;
 
-  @media (min-width: 768) {
-    padding: 0;
+  @media (min-width: 768px) {
+    padding: 6px calc(12 / 768 * 100vw) 8px 0;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 6px 0 6px 0;
   }
 }
 

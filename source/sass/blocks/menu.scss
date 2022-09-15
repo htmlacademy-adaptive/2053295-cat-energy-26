@@ -63,8 +63,14 @@
           opacity: 0.3;
         }
       }
+    }
 
-      &_active_bleached {
+    &_active_bleached {
+      @media (min-width: 768px) {
+        border-color: $Apple;
+      }
+
+      @media (min-width: 1440px) {
         border-color: $White;
       }
     }
