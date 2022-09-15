@@ -136,11 +136,10 @@
     padding: 23px 28px;
     border: 1px solid $Mercury;
   }
+
   @media (min-width: 1440px) {
     max-width: 512px;
   }
-
-
 }
 
 .choice-form__list-contacts {
@@ -227,11 +226,11 @@
   }
 }
 
-.choice-form__input:focus + .choice-form__image {
+.choice-form__input:focus+.choice-form__image {
   stroke: $Apple;
 }
 
-.choice-form__input:focus:invalid + .choice-form__image {
+.choice-form__input:focus:invalid+.choice-form__image {
   stroke: $Vivid-Tangerine;
 }
 
@@ -253,13 +252,13 @@
   appearance: none;
 }
 
-.choice-form__radio:checked + .choice-form__label-radio::after,
-.choice-form__checkbox:checked + .choice-form__label-checkbox::after {
+.choice-form__radio:checked+.choice-form__label-radio::after,
+.choice-form__checkbox:checked+.choice-form__label-checkbox::after {
   content: "";
 }
 
-.choice-form__radio:disabled + .choice-form__label-radio,
-.choice-form__checkbox:disabled + .choice-form__label-checkbox {
+.choice-form__radio:disabled+.choice-form__label-radio,
+.choice-form__checkbox:disabled+.choice-form__label-checkbox {
   opacity: 0.5;
 }
 
