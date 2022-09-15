@@ -75,24 +75,26 @@
     </div>
     <form class="choice-form" action="https://echo.htmlacademy.ru/" method="post">
       <div class="choice-form__content-wrapper">
-        <div class="container container__parameters">
-          <fieldset class="choice-form__fieldset choice-form__parameters">
-            <legend class="visually-hidden">Данные вашего кота</legend>
-            <ul class="choice-form__list">
-              <li class="choice-form__list-item">
-                <label class="choice-form__label form-label" for="catname">Имя:<sup>*</sup></label>
-                <input class="choice-form__input form-input" type="text" id="catname" name="catname" placeholder="Барсик" required>
-              </li>
-              <li class="choice-form__list-item">
-                <label class="choice-form__label form-label" for="catweight">Вес (кг):<sup>*</sup></label>
-                <input class="choice-form__input form-input" type="text" id="catweight" name="catweight" placeholder="7" required>
-              </li>
-              <li class="choice-form__list-item">
-                <label class="choice-form__label choice-form__label_long form-label" for="catage">Возраст (лет):</label>
-                <input class="choice-form__input form-input" type="text" id="catage" name="catage" placeholder="7">
-              </li>
-            </ul>
-          </fieldset>
+        <div class="container">
+          <div class="container__parameters">
+            <fieldset class="choice-form__fieldset choice-form__parameters">
+              <legend class="visually-hidden">Данные вашего кота</legend>
+              <ul class="choice-form__list">
+                <li class="choice-form__list-item">
+                  <label class="choice-form__label form-label" for="catname">Имя:<sup>*</sup></label>
+                  <input class="choice-form__input form-input" type="text" id="catname" name="catname" placeholder="Барсик" required>
+                </li>
+                <li class="choice-form__list-item">
+                  <label class="choice-form__label form-label" for="catweight">Вес (кг):<sup>*</sup></label>
+                  <input class="choice-form__input form-input" type="text" id="catweight" name="catweight" placeholder="7" required>
+                </li>
+                <li class="choice-form__list-item">
+                  <label class="choice-form__label choice-form__label_long form-label" for="catage">Возраст (лет):</label>
+                  <input class="choice-form__input form-input" type="text" id="catage" name="catage" placeholder="7">
+                </li>
+              </ul>
+            </fieldset>
+          </div>
         </div>
         <div class="choice-form__fieldset-box">
           <div class="container">
@@ -139,7 +141,7 @@
         <div class="container">
           <label class="choice-form__legend legend-title" for="message">Комментарий</label>
           <div class="choice-form__message-wrapper">
-            <textarea class="choice-form__textarea form-input form-input__textarea" id="message" name="message" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="choice-form__textarea form-input form-input_textarea" id="message" name="message" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </div>
       </div>
