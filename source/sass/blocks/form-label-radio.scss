@@ -1,0 +1,56 @@
+.form-label-radio {
+  position: relative;
+  left: -8px;
+  display: flex;
+  align-items: center;
+  padding: 6px 0 5px 45px;
+
+  @media (min-width: 768px) {
+    padding-left: 59px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid $Silver;
+    border-radius: 50%;
+    background-color: $White;
+
+    @media (min-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &::after {
+    content: none;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: $Apple;
+
+    @media (min-width: 768px) {
+      width: 18px;
+      height: 18px;
+      left: 20px;
+    }
+  }
+
+  &:hover::before {
+    border-color: $Silver-Dark;
+  }
+}

@@ -1,13 +1,11 @@
 .card-product {
   display: grid;
-  grid-template-columns: repeat(3, 50% 25% 25%);
+  grid-template-columns: 50% 25% 25%;
   grid-template-rows: repeat(3, auto);
 
   @media (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto 40px;
   }
 }
 
@@ -19,18 +17,141 @@
   align-items: center;
 
   @media (min-width: 768px) {
-    height: 207px;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    align-items: flex-end;
+  }
+
+  &_small {
+    @media (min-width: 768px) {
+      min-height: 204px;
+      margin-bottom: 31px;
+    }
+
+    @media (min-width: 1440px) {
+      min-height: 202px;
+      margin-bottom: 37px;
+    }
+  }
+
+  &_big {
+    @media (min-width: 768px) {
+      min-height: 212px;
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: 1440px) {
+      min-height: 205px;
+      margin-bottom: 34px;
+    }
+  }
+}
+
+.card-product__picture {
+  position: relative;
+
+  &_chicken-small {
+    top: -5px;
+
+    @media (min-width: 768px) {
+      top: 1px;
+    }
+
+    @media (min-width: 1440px) {
+      top: -2px;
+    }
+  }
+
+  &_chicken-big {
+    top: 0;
+
+    @media (min-width: 768px) {
+      top: 1px;
+    }
+
+    @media (min-width: 1440px) {
+      top: -3px;
+    }
+  }
+
+  &_fish-small {
+    top: 4px;
+
+    @media (min-width: 768px) {
+      top: 0;
+    }
+
+    @media (min-width: 1440px) {
+      top: -2px;
+    }
+  }
+
+  &_fish-big {
+    top: 0;
+
+    @media (min-width: 768px) {
+      top: -6px;
+    }
+
+    @media (min-width: 1440px) {
+      top: -9px;
+    }
+  }
+
+  &_buckwheat-small {
+    top: 7px;
+
+    @media (min-width: 768px) {
+      top: 1px;
+    }
+
+    @media (min-width: 1440px) {
+      top: -1px;
+    }
+  }
+
+  &_buckwheat-big {
+    top: 0;
+
+    @media (min-width: 768px) {
+      top: -6px;
+    }
+
+    @media (min-width: 1440px) {
+      top: -9px;
+    }
+  }
+
+  &_rice-small {
+    top: 4px;
+
+    @media (min-width: 768px) {
+      top: 1px;
+    }
+
+    @media (min-width: 1440px) {
+      top: -2px;
+    }
   }
 }
 
 .card-product__link {
+  display: block;
   grid-column: 2/4;
   grid-row: 1/2;
   text-decoration: none;
+  padding: 0 45px 0 0;
+
+  @media (min-width: 768px) {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    align-self: start;
+    padding-right: 0;
+  }
 }
 
 .card-product__title {
-  margin: 0;
+  margin: 0 0 14px 0;
   font-family: $Oswald;
   font-style: normal;
   font-weight: 400;
@@ -41,14 +162,25 @@
 
   @media (min-width: 768px) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 24px;
+    margin: 0 auto;
     text-align: center;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 3px;
+  }
+}
+
+.card-product__title-span {
+  @media (min-width: 1440px) {
+    padding-left: 4px;
   }
 }
 
 .card-product__list {
-  margin: 0;
-  padding: 14px 0 22px;
+  margin: 0 0 22px;
+  padding: 0;
   grid-column: 2/4;
   grid-row: 2/3;
   display: grid;
@@ -62,14 +194,46 @@
   color: $Tundora;
 
   @media (min-width: 768px) {
-    width: 100%;
     font-size: 16px;
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    padding: 22px 37px 24px;
+    margin: 0;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 22px 0 24px;
+  }
+}
+
+.card-product__item {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    margin-bottom: 8px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid $Silver;
+  }
+}
+
+.card-product__term {
+  @media (min-width: 768px) {
+    padding: 0;
+    border-bottom: none;
   }
 }
 
 .card-product__description {
   margin: 0;
   text-align: right;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    border-bottom: none;
+  }
 }
 
 .card-product__button {
@@ -77,6 +241,13 @@
   grid-row: 3/4;
 
   @media (min-width: 768px) {
+    width: 248px;
+    grid-column: 1/-1;
+    grid-row: 4/5;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1440px) {
     width: 100%;
   }
 }

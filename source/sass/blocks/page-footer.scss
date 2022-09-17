@@ -10,6 +10,11 @@
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
+    padding: 66px 0;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 40px 0;
   }
 }
 
@@ -17,23 +22,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 39px 0 32px;
   border-bottom: 1px solid $Alto;
+  padding: 32px 0 31px 0;
+  transition-property: fill, opacity;
+  transition-duration: 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 
   @media (min-width: 768px) {
     border-bottom: none;
-    padding: 58px 0 55px;
+    padding: 0;
   }
 }
 
 .page-footer__social {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
   border-bottom: 1px solid $Alto;
   margin: 0;
-  padding: 0;
+  padding: 22px 78px 18px 75px;
+
+  @media (min-width: 768px) {
+    border-bottom: none;
+    padding: 0 0 0 24px;
+  }
 }
 
 .page-footer__academy {
@@ -41,6 +65,28 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+  fill: $Dove-Gray;
+  transition-property: fill, opacity;
+  transition-duration: 0.3s;
+  padding: 22px 0;
+
+  &:hover {
+    fill: $Apple;
+  }
+
+  &:active {
+    fill: $Apple;
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    fill: $Apple;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__academy-picture {
+  fill: inherit;
 }
 
 .page-footer__text {
@@ -50,9 +96,9 @@
   font-size: 16px;
   line-height: 18px;
   color: $Tundora;
-  padding: 22px 0;
 
   @media (min-width: 768px) {
     margin-right: 22px;
+    padding: 0;
   }
 }

@@ -1,14 +1,123 @@
+.additional-products {
+  @media (min-width: 1440px) {
+    flex-grow: 1;
+    margin-right: 80px;
+  }
+}
+
+.additional-products__wrapper {
+  padding: 25px 0 0;
+
+  @media (min-width: 768px) {
+    padding: 43px 0 0;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 49px 0 0;
+  }
+}
+
 .additional-products__title {
+  position: relative;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: $Black;
+  margin: 0 0 35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -100vw;
+    top: 23px;
+    right: calc(100% + 40px);
+    bottom: calc(100% - 25px);
+    background-color: $Apple;
+
+    @media (min-width: 768px) {
+      top: 22px;
+      bottom: calc(100% - 24px);
+      right: 100%;
+    }
+
+    @media (min-width: 1440px) {
+      top: 22px;
+      bottom: calc(100% - 25px);
+      right: calc(100% + 40px);
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: calc(100% - 33px);
+    top: 15px;
+    right: -100vw;
+    bottom: calc(100% - 17px);
+    background-color: $Apple;
+
+    @media (min-width: 768px) {
+      left: calc(100% - 297px);
+      top: 22px;
+      bottom: calc(100% - 24px);
+    }
+
+    @media (min-width: 1440px) {
+      left: calc(100% + 35px);
+      top: 22px;
+      bottom: calc(100% - 25px);
+    }
+  }
+
+  @media (min-width: 768px) {
+    margin: 0 0 80px;
+    padding: 0 37px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: 1440px) {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+  }
 }
 
 .additional-products__list {
   padding: 0;
+  margin: 0 0 35px;
+
+  @media (min-width: 768px) {
+    margin: 0 0 69px;
+    border: 1px solid $Silver;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0 0 69px;
+    border-left: none;
+    border-right: none;
+  }
 }
 
 .additional-products__item {
-  margin-bottom: 19px;
+  padding: 13px 0 18px;
+  border-top: 1px solid $Silver;
+
+  @media (min-width: 768px) {
+    padding: 25px 37px 28px;
+    border-top: none;
+    border-bottom: 1px solid $Silver;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid $Silver;
+
+    @media (min-width: 768px) {
+      border-bottom: none;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    padding: 16px 0 15px;
+  }
 }

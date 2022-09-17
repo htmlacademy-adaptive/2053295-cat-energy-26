@@ -3,4 +3,23 @@
   font-size: 36px;
   line-height: 36px;
   color: $Black;
+  margin: 0 0 41px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 87px;
+  }
+
+  @media (min-width: 1440px) {
+    grid-column: 1/-1;
+  }
+}
+
+.main-catalog__container {
+  padding: 0 0 35px;
+
+  @media (min-width: 768px) {
+    padding: 36px 0 0;
+  }
 }

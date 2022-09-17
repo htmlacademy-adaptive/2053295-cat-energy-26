@@ -1,0 +1,43 @@
+.form-input {
+  box-sizing: border-box;
+  border: 1px solid $Mercury;
+  padding: 13px 15px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  color: $Tundora;
+  text-transform: uppercase;
+  outline: none;
+
+  &_textarea {
+    padding: 10px 14px;
+    resize: none;
+  }
+
+  @media (min-width: 768px) {
+    padding: 9px 18px 11px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    border-color: $Silver;
+    background-color: $White;
+  }
+
+  &:focus {
+    border-color: $Tundora;
+    outline: 1px solid $Tundora;
+    background-color: $White;
+  }
+
+  &:focus:invalid {
+    border-color: $Vivid-Tangerine;
+    outline: 1px solid $Vivid-Tangerine;
+  }
+
+  &::placeholder {
+    color: inherit;
+    opacity: 1;
+  }
+}

@@ -1,18 +1,32 @@
+.product-description__wrapper {
+  padding-top: 22px;
+
+  @media (min-width: 768px) {
+    padding: 46px 0 5px;
+    border-bottom: 1px solid $Mercury-Dark;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 69px 0 102px;
+    border: none;
+  }
+}
+
 .product-description__title {
-  margin: 20px 0 40px;
+  margin: 0 0 39px;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: $Black;
 
   @media (min-width: 768px) {
-    margin: 45px 0 32px;
+    margin-bottom: 169px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: 1440px) {
-    margin: 71px 0 32px;
+    margin-bottom: 171px;
   }
 }
 
@@ -25,8 +39,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: 35px;
-    grid-column-gap: calc(135 / 672 * 100%);
+    grid-row-gap: 230px;
+    grid-column-gap: 59px;
+    padding: 0 0 97px;
   }
 
   @media (min-width: 1440px) {
@@ -34,7 +49,8 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-column-gap: 77px;
-    margin-bottom: 69px;
+    margin-bottom: 0;
+    padding: 0;
   }
 }
 
@@ -43,6 +59,9 @@
   list-style: none;
   margin-bottom: 20px;
   min-height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
   &:last-child {
     margin-bottom: 50px;
@@ -55,20 +74,31 @@
   @media (min-width: 768px) {
     margin: 0;
     width: 247px;
-    height: 280px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 
     &::before {
       counter-increment: list1;
       content: counter(list1) "";
       position: absolute;
-      left: 50%;
+      top: -138px;
+      left: 113px;
       font-size: 280px;
       line-height: 280px;
       text-align: center;
       color: $Concrete;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0;
+    width: 247px;
+    height: auto;
+    display: block;
+
+    &::before {
+      top: -139px;
     }
   }
 }
@@ -91,7 +121,7 @@
     background-repeat: no-repeat;
 
     @media (min-width: 768px) {
-      top: -145%;
+      top: -98px;
       width: 80px;
       height: 80px;
     }
@@ -102,6 +132,7 @@
     padding-left: 0;
     font-size: 16px;
     line-height: 24px;
+    padding-top: 15px;
   }
 }
 

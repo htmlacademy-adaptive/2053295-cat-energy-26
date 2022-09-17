@@ -1,6 +1,5 @@
 .navigation {
   position: relative;
-  padding: 10px 0 18px;
 
   @media (min-width: 768px) {
     display: flex;
@@ -10,23 +9,52 @@
   }
 }
 
+.navigation__header {
+  padding: 0 0 12px 0;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    padding: 7px calc(12 / 768 * 100vw) 7px 0;
+    width: auto;
+    margin: 0;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 6px 0 6px 0;
+    margin: 0;
+  }
+}
+
 .navigation__logo {
   display: block;
+  transition-property: opacity;
+  transition-duration: 0.3s;
 
   &_image {
     @media (min-width: 768px) {
-      padding: 8px calc(12 / 768 * 100vw) 8px 0;
+      padding: 6px calc(12 / 768 * 100vw) 8px 0;
     }
 
     @media (min-width: 1440px) {
-      padding: 8px calc(14 / 1440 * 100vw) 8px 0;
+      padding: 5px 14px 8px 0;
     }
   }
 
   &_text {
-    @media (min-width: 768px) {
-      padding: 13px 0;
+    padding: 3px 0 0 0;
+
+    @media (min-width: 1440px) {
+      padding: 3px 0 0;
     }
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
@@ -40,7 +68,7 @@
 
   @media (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
 }

@@ -2,15 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
-  padding: 0;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  }
 }
 
 .navigation-header__item {
   list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  &_center {
+    padding-right: 13px;
+  }
 
   &:last-child {
     position: relative;
@@ -18,10 +21,58 @@
 }
 
 .navigation-header__button {
-  top: 25px;
-  right: 20px;
+  position: relative;
+  margin-left: auto;
+  margin-bottom: 6px;
+  padding: 0;
+  border: 0;
+  width: 24px;
+  height: 24px;
+  color: $Black;
+  background-color: transparent;
 
   @media (min-width: 768px) {
     display: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $Black;
+  }
+
+  &::before {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+
+  &_off {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: none;
+      width: 24px;
+      height: 2px;
+      background-color: $Black;
+      box-shadow: 0 -8px 0 0 $Black, 0 8px 0 0 $Black;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  &_js {
+    display: block;
   }
 }

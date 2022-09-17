@@ -12,14 +12,15 @@
   background-color: $Concrete;
   list-style-type: none;
   margin-bottom: 20px;
-  padding: 23px 23px 0;
+  padding: 30px 20px 0;
 
   &:last-child {
     margin-bottom: 0;
   }
 
   @media (min-width: 768px) {
-    padding: 81px 53px 53px;
+    margin-bottom: 31px;
+    padding: 77px 53px 53px;
   }
 
   @media (min-width: 1440px) {
@@ -37,12 +38,13 @@
   text-transform: uppercase;
   color: $Black;
   margin: 0 0 29px;
-  padding-left: 80px;
+  padding-left: 70px;
 
   @media (min-width: 768px) {
     padding-left: 0;
     font-size: 36px;
     line-height: 36px;
+    margin: 0 0 25px;
   }
 
   @media (min-width: 1440px) {
@@ -52,26 +54,29 @@
 
   &::before {
     content: "";
-    background-image: url("../img/cat_back.svg");
+    background-image: url("../img/cat_back-mobile.svg");
     background-position: center;
     background-size: contain;
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 47%;
     background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
+    width: 54px;
+    height: 54px;
     transform: translateY(-50%);
 
     @media (min-width: 768px) {
+      background-image: url("../img/cat_back-tablet.svg");
       left: auto;
-      right: 162px;
+      top: 3px;
+      right: 109px;
       width: 200px;
-      height: 211px;
+      height: 212px;
       transform: translate(50%, 0%);
     }
 
     @media (min-width: 1440px) {
+      background-image: url("../img/cat_back-tablet.svg");
       top: 50%;
       left: 0;
       width: 100px;
@@ -81,20 +86,36 @@
   }
 
   &_walking-cat {
+    padding-left: 70px;
+
+    @media (min-width: 768px) {
+      padding-left: 0;
+    }
+
+    @media (min-width: 1440px) {
+      padding-left: 162px;
+    }
+
     &::before {
-      background-image: url("../img/cat_back1.svg");
+      left: -7px;
+      top: 52%;
+      background-image: url("../img/walking-cat_back-mobile.svg");
       width: 67px;
+      height: 67px;
 
       @media (min-width: 768px) {
+        background-image: url("../img/walking-cat_back-tablet.svg");
+        top: 9%;
+        left: 225px;
         width: 268px;
-        height: 200px;
+        height: 222px;
       }
 
       @media (min-width: 1440px) {
-        top: 50%;
-        left: 0;
-        width: 100px;
-        height: 106px;
+        background-image: url("../img/walking-cat_back-desctop.svg");
+        top: 56%;
+        left: -18px;
+        width: 134px;
         transform: translateY(-50%);
       }
     }
@@ -103,10 +124,10 @@
 
 .program-version__text {
   font-family: $Arial;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 
   @media (min-width: 768px) {
-    width: calc(340 / 708 * 100%);
+    width: 57%;
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 48px;
@@ -121,26 +142,59 @@
 .program-version__link {
   display: block;
   position: relative;
-  padding: 18px 0;
+  padding: 20px 0;
   border-top: 1px solid $Alto;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
   color: $Black;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::after {
     content: "";
     background-image: url("../img/arrow.svg");
-    background-position: center;
+    background-position: 50%;
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    left: 98px;
-    top: 0;
+    left: 101px;
+    top: -2px;
     right: 0;
     bottom: 0;
-    width: 25px;
+    width: 33px;
+
+    @media (min-width: 768px) {
+      left: 132px;
+      width: 32px;
+    }
+
+    @media (min-width: 1440px) {
+      top: 1px;
+      left: 136px;
+      right: 0;
+      width: 32px;
+    }
+  }
+
+  &_pro {
+    &::after {
+      top: 0;
+      left: 99px;
+
+      @media (min-width: 768px) {
+        left: 128px;
+      }
+
+      @media (min-width: 1440px) {
+        left: 130px;
+      }
+    }
   }
 
   @media (min-width: 768px) {
@@ -148,5 +202,10 @@
     border: none;
     font-size: 20px;
     line-height: 30px;
+    padding: 3px 0;
+  }
+
+  @media (min-width: 1440px) {
+    width: 165px;
   }
 }

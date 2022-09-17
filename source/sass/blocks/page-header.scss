@@ -1,15 +1,22 @@
 .page-header {
   width: 100%;
 
-  @media (min-width: 768px) {
-    padding: 24px 0 32px;
-  }
-
   &_absolute {
     @media (min-width: 1440px) {
       position: absolute;
-      padding: 53px 0 0;
       z-index: 10;
     }
+  }
+}
+
+.page-header__container {
+  padding: 12px 0 1px;
+
+  @media (min-width: 768px) {
+    padding: 12px 0 11px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 43px 0 23px;
   }
 }
