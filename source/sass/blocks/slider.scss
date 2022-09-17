@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .slider__button {
@@ -20,30 +20,38 @@
   transition-duration: 0.3s;
 
   @media (min-width: 1440px) {
-    top: 29px;
+    top: 22px;
   }
 
   &:hover {
-    .separator_line,
-    .separator_arrows {
+    .separator__line,
+    .separator__arrows {
+
       fill: $Apple;
     }
 
-    .separator_border {
+    .separator__border {
       stroke: $Apple;
     }
   }
 
   &:active {
-    .separator_line,
-    .separator_arrows {
+    .separator__line,
+    .separator__arrows {
       fill: $Apple;
       opacity: 0.6;
     }
 
-    .separator_border {
+    .separator__border {
       stroke: $Apple;
       opacity: 0.6;
     }
+  }
+}
+
+.slider__picture {
+  @media (min-width: 1440px) {
+    position: relative;
+    top: 22px;
   }
 }

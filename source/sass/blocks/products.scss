@@ -4,6 +4,16 @@
   grid-row-gap: 20px;
 }
 
+.products__wrapper {
+  border-bottom: 1px solid $Gallery-Dark;
+  padding-bottom: 24px;
+
+  @media (min-width: 768px) {
+    border: none;
+    padding-bottom: 0;
+  }
+}
+
 .products__list {
   list-style-type: none;
   margin: 0;

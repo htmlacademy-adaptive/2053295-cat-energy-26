@@ -15,11 +15,14 @@
   margin: 0 auto;
 
   @media (min-width: 768px) {
-    padding: 6px calc(12 / 768 * 100vw) 8px 0;
+    padding: 7px calc(12 / 768 * 100vw) 7px 0;
+    width: auto;
+    margin: 0;
   }
 
   @media (min-width: 1440px) {
     padding: 6px 0 6px 0;
+    margin: 0;
   }
 }
 
@@ -65,7 +68,7 @@
 
   @media (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
 }

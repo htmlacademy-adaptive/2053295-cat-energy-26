@@ -39,6 +39,7 @@
 
   @media (min-width: 1440px) {
     width: 100%;
+    margin: 0 0 24px;
   }
 }
 
@@ -60,6 +61,7 @@
     font-size: 16px;
     line-height: 18px;
     width: 100%;
+    margin: 0 0 84px;
     padding: 0;
   }
 }
@@ -78,6 +80,10 @@
   padding: 10px 0;
   transition-property: background-color, color;
   transition-duration: 0.3s;
+
+  @media (min-width: 1440px) {
+    padding: 12px 0 13px;
+  }
 
   &:hover {
     background-color: $Gallery-Dark;

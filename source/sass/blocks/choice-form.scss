@@ -60,12 +60,13 @@
 
   @media (min-width: 768px) {
     margin-bottom: 32px;
+    padding: 31px 0 18px;
   }
 
   @media (min-width: 1440px) {
     margin-bottom: 32px;
     grid-column: 1 / -1;
-    padding: 69px 0 18px;
+    padding: 68px 0 18px;
   }
 }
 
@@ -87,7 +88,7 @@
   padding: 0 0 22px;
 
   @media (min-width: 768px) {
-    padding: 56px 0 44px;
+    padding: 57px 0 44px;
     margin-bottom: 4px;
   }
 
@@ -133,7 +134,7 @@
     grid-row-gap: 13px;
     max-width: 572px;
     margin: 0;
-    padding: 23px 28px;
+    padding: 22px 28px;
     border: 1px solid $Mercury;
   }
 
@@ -316,15 +317,19 @@
 }
 
 .choice-form__notice {
-  margin: 16px 0 30px;
+  margin: 20px 0 31px;
   font-family: $Arial;
   text-align: center;
 
   @media (min-width: 768px) {
     margin: 0;
-    padding: 0 0 9px 1px;
+    padding: 0 0 8px 1px;
     width: 287px;
     text-align: left;
     letter-spacing: 1.15px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 0 3px 1px;
   }
 }

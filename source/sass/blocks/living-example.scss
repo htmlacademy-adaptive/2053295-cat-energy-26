@@ -1,31 +1,26 @@
 .living-example {
   position: relative;
+  background-color: $Gallery;
 
   @media (min-width: 768px) {
-    &::before {
-      content: "";
-      background: linear-gradient($Gallery, $Gallery);
-      background-blend-mode: overlay;
-      position: absolute;
-      left: 0;
-      top: 625px;
-      right: 0;
-      bottom: 0%;
-      z-index: -10;
-    }
+    background: linear-gradient(to top, $Gallery 461px, $White 461px, $White 100%);
   }
 }
 
 .living-example__container {
-  margin-bottom: 36px;
+  padding-bottom: 37px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 0;
+  }
 
   @media (min-width: 1440px) {
     display: grid;
     grid-template-columns: 440px 50%;
     grid-template-rows: repeat(4, auto);
     grid-column-gap: 180px;
-    margin-bottom: 44px;
-    padding: 0 0 12px;
+    margin-bottom: 0;
+    padding-bottom: 56px;
   }
 }
 
@@ -41,12 +36,12 @@
     font-size: 60px;
     line-height: 60px;
     margin: 0 0 64px;
-    padding-top: 49px;
+    padding-top: 43px;
   }
 
   @media (min-width: 1440px) {
     margin: 0 0 148px;
-    padding: 28px 0 0;
+    padding: 21px 0 0;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
@@ -142,7 +137,7 @@
   color: $Tundora;
   width: 67%;
   display: inline;
-  background-color: $White;
+  background-color: $Gallery;
 
   @media (min-width: 768px) {
     display: block;
@@ -152,6 +147,11 @@
     margin: 0;
     padding: 0 8px;
     bottom: -13px;
+    background-color: $White;
+  }
+
+  @media (min-width: 1440px) {
+    background-color: $Gallery;
   }
 }
 
@@ -245,12 +245,12 @@
   margin: 0;
 
   @media (min-width: 768px) {
-    padding-bottom: 98px;
+    padding-bottom: 97px;
   }
 
   @media (min-width: 1440px) {
     margin-left: 29px;
-    padding: 3px 0 0 0;
+    padding: 0;
     grid-column: 2 / -1;
     grid-row: 1 / -1;
   }
