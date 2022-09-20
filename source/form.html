@@ -44,11 +44,8 @@
             </a>
           </li>
           <li class="navigation-header__item">
-            <button class="navigation-header__button button" type="button">
-              <span class="button__line"></span>
-              <span class="visually-hidden">
-                Открыть меню
-              </span>
+            <button class="navigation-header__button navigation-header__button_on navigation-header__button_off" type="button">
+              <span class="visually-hidden">Меню</span>
             </button>
           </li>
         </ul>
@@ -131,14 +128,16 @@
             <li class="choice-form__list-item">
               <label class="choice-form__label form-label" for="email">E-mail:<sup>*</sup></label>
               <input class="choice-form__input choice-form__input_contacts form-input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
-              <svg class="choice-form__image choice-form__image_email" width="19" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="" stroke-width="1.3" fill="" d="M1.179 6v8M18.179 6v8M.529 13.35h18M.529 1.35h18M17.88 3.182 9.53 9.677 1.18 3.182V1.65h16.7v1.532Z" /></svg>
+              <svg class="choice-form__image choice-form__image_email" width="19" height="14">
+                <use xlink:href="img/sprite.svg#email"></use>
+              </svg>
             </li>
             <li class="choice-form__list-item">
               <label class="choice-form__label form-label" for="phone">Телефон:<sup>*</sup></label>
               <input class="choice-form__input choice-form__input_contacts form-input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
-              <svg class="choice-form__image choice-form__image_phone" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.9 9.4H9.4v1.2h8.5l-2.1 2.1.9.9 3.1-3.1a.75.75 0 0 0 0-.9l-3.1-3.1-.9.9 2.1 2Zm-9.8 10v-6.2a.65.65 0 0 0-.6-.6H3.1a1.22 1.22 0 0 0 1.2 1.2h2.5v5H3.1a1.789 1.789 0 0 1-1.306-.453A1.79 1.79 0 0 1 1.2 17.1v-14a1.77 1.77 0 0 1 1.7-1.8h3.9v5H4.4a1.22 1.22 0 0 0-1.2 1.2h4.4a.65.65 0 0 0 .6-.6V.6a.86.86 0 0 0-.7-.6H3.1A3 3 0 0 0 0 2.9v13.9a2.89 2.89 0 0 0 2.9 3.1h4.6a.5.5 0 0 0 .555-.282.5.5 0 0 0 .045-.218Z" fill="" stroke="" /></svg>
+              <svg class="choice-form__image choice-form__image_phone" width="20" height="20">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
             </li>
           </ul>
         </div>
@@ -239,7 +238,7 @@
         <span class="page-footer__text">
           HTML Academy
         </span>
-        <svg width="27" height="44">
+        <svg class="page-footer__academy-picture" width="27" height="44">
           <use xlink:href="img/sprite.svg#html-academy"></use>
         </svg>
       </a>

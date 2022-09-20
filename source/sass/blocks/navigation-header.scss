@@ -31,10 +31,6 @@
   color: $Black;
   background-color: transparent;
 
-  @media (min-width: 768px) {
-    display: none;
-  }
-
   &::before,
   &::after {
     content: "";
@@ -46,19 +42,22 @@
     background-color: $Black;
   }
 
-  &::before {
-    transform: translateY(-50%) rotate(45deg);
+  @media (min-width: 768px) {
+    display: none;
   }
 
-  &::after {
-    transform: translateY(-50%) rotate(-45deg);
+  &_on {
+    &::before {
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translateY(-50%) rotate(-45deg);
+    }
   }
 
   &_off {
     &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
       right: 0;
       transform: none;
       width: 24px;
@@ -70,9 +69,5 @@
     &::after {
       content: none;
     }
-  }
-
-  &_js {
-    display: block;
   }
 }

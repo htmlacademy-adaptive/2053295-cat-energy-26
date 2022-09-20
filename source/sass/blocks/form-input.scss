@@ -25,6 +25,11 @@
     background-color: $White;
   }
 
+  &:active {
+    border-color: $Silver;
+    background-color: $White;
+  }
+
   &:focus {
     border-color: $Tundora;
     outline: 1px solid $Tundora;
