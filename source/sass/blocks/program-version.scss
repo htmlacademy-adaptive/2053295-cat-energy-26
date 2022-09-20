@@ -152,6 +152,12 @@
   transition-property: opacity;
   transition-duration: 0.2s;
 
+  &:hover {
+    &::after {
+      background-image: url("../img/arrow-hover.svg");
+    }
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -160,16 +166,16 @@
     content: "";
     background-image: url("../img/arrow.svg");
     background-position: 50%;
-    background-size: contain;
+    background-size: auto;
     background-repeat: no-repeat;
     position: absolute;
-    left: 101px;
+    left: -7px;
     top: -2px;
     right: 0;
     bottom: 0;
-    width: 33px;
 
     @media (min-width: 768px) {
+
       left: 132px;
       width: 32px;
     }
@@ -185,7 +191,7 @@
   &_pro {
     &::after {
       top: 0;
-      left: 99px;
+      left: -10px;
 
       @media (min-width: 768px) {
         left: 128px;
@@ -198,7 +204,7 @@
   }
 
   @media (min-width: 768px) {
-    width: 25%;
+    width: 26%;
     border: none;
     font-size: 20px;
     line-height: 30px;

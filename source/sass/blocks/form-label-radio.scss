@@ -13,6 +13,10 @@
     opacity: 0.3;
   }
 
+  &:disabled {
+    opacity: 0.3;
+  }
+
   &::before {
     content: "";
     width: 30px;
@@ -52,5 +56,9 @@
 
   &:hover::before {
     border-color: $Silver-Dark;
+  }
+
+  &:focus::before {
+    border-color: $Tundora;
   }
 }

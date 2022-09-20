@@ -10,11 +10,12 @@
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 66px 0;
+    align-items: center;
+    padding: 64px 0 49px;
   }
 
   @media (min-width: 1440px) {
-    padding: 40px 0;
+    padding: 53px 0 44px;
   }
 }
 
@@ -26,6 +27,7 @@
   padding: 32px 0 31px 0;
   transition-property: fill, opacity;
   transition-duration: 0.3s;
+  fill: $Cod-Gray;
 
   &:hover {
     opacity: 0.8;
@@ -52,11 +54,11 @@
   list-style: none;
   border-bottom: 1px solid $Alto;
   margin: 0;
-  padding: 22px 78px 18px 75px;
+  padding: 22px 73px 18px 76px;
 
   @media (min-width: 768px) {
     border-bottom: none;
-    padding: 0 0 0 24px;
+    padding: 0 0 0 28px;
   }
 }
 
@@ -68,7 +70,7 @@
   fill: $Dove-Gray;
   transition-property: fill, opacity;
   transition-duration: 0.3s;
-  padding: 22px 0;
+  padding: 21px 0 21px;
 
   &:hover {
     fill: $Apple;
@@ -83,6 +85,14 @@
     fill: $Apple;
     opacity: 0.3;
   }
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+
+  @media (min-width: 768px) {
+    padding: 6px 0 0 0;
+  }
 }
 
 .page-footer__academy-picture {
@@ -96,6 +106,7 @@
   font-size: 16px;
   line-height: 18px;
   color: $Tundora;
+  padding-bottom: 11px;
 
   @media (min-width: 768px) {
     margin-right: 22px;
