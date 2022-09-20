@@ -87,8 +87,11 @@
   height: 369px;
   margin: 0 auto;
 
+  @media (min-width: 768px) {
+    height: 387px;
+  }
+
   @media (min-width: 1440px) {
-    margin: 0 auto;
     height: 398px;
   }
 }

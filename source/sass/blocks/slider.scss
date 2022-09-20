@@ -14,38 +14,23 @@
   background-color: transparent;
   border: none;
   width: 40px;
-  height: 256px;
   cursor: pointer;
   transition-property: fill, stroke, opacity;
   transition-duration: 0.3s;
+  stroke: $Dove-Gray;
+  fill: $Dove-Gray;
 
   @media (min-width: 1440px) {
     top: 22px;
   }
 
   &:hover {
-    .separator__line,
-    .separator__arrows {
-
-      fill: $Apple;
-    }
-
-    .separator__border {
-      stroke: $Apple;
-    }
+    stroke: $Apple;
+    fill: $Apple;
   }
 
   &:active {
-    .separator__line,
-    .separator__arrows {
-      fill: $Apple;
-      opacity: 0.6;
-    }
-
-    .separator__border {
-      stroke: $Apple;
-      opacity: 0.6;
-    }
+    opacity: 0.6;
   }
 }
 

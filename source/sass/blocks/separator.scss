@@ -1,33 +1,15 @@
 .separator {
   display: none;
 
-  &_desctop {
-    @media (min-width: 1440px) {
-      display: block;
-    }
-  }
-
-  &_tablet {
-    @media (min-width: 768px) and (max-width: 1439px) {
+  &_desktop {
+    @media (min-width: 768px) {
       display: block;
     }
   }
 
   &_mobile {
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (max-width: 767px) {
       display: block;
     }
   }
-}
-
-.separator__line {
-  fill: $Dove-Gray;
-}
-
-.separator__arrows {
-  fill: $Dove-Gray;
-}
-
-.separator__border {
-  stroke: $Dove-Gray;
 }
