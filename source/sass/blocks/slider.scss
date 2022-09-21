@@ -40,3 +40,10 @@
     top: 22px;
   }
 }
+
+.slider__image {
+  @media (min-width: 768px) {
+    width: 560px;
+    height: 512px;
+  }
+}

@@ -135,6 +135,34 @@
   }
 }
 
+.card-product__image {
+  &_small {
+    @media (min-width: 768px) {
+      width: 161px;
+      height: 172px;
+    }
+  }
+
+  &_big {
+    @media (min-width: 768px) {
+      width: 172px;
+      height: 207px;
+    }
+  }
+
+  &_almost-big {
+    @media (min-width: 768px) {
+      width: 169px;
+      height: 200px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 169px;
+      height: 196px;
+    }
+  }
+}
+
 .card-product__link {
   display: block;
   grid-column: 2/4;
