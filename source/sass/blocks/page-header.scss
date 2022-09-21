@@ -1,6 +1,11 @@
 .page-header {
   width: 100%;
 
+  @media (max-width: 767px) {
+    position: relative;
+    background-color: $White;
+  }
+
   &_absolute {
     @media (min-width: 1440px) {
       position: absolute;
@@ -11,12 +16,15 @@
 
 .page-header__container {
   padding: 12px 0 1px;
+    margin: 0 auto;
 
   @media (min-width: 768px) {
     padding: 12px 0 11px;
+    width: 708px;
   }
 
   @media (min-width: 1440px) {
     padding: 43px 0 23px;
+    width: 1220px;
   }
 }

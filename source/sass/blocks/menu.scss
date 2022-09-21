@@ -1,3 +1,27 @@
+.menu {
+  @media (max-width: 768px) {
+    // width: 100vw;
+    background-color: $White;
+    z-index: 5;
+    transition-property: left;
+    transition-duration: 0.3s;
+
+    &_closed {
+      position: absolute;
+      width: 100vw;
+      top: 100%;
+      left: -100vw;
+    }
+
+    &_open {
+      position: absolute;
+      width: 100vw;
+      top: 100%;
+      left: 0;
+    }
+  }
+}
+
 .menu__item {
   list-style-type: none;
   border-top: 1px solid $Mercury-Dark;
