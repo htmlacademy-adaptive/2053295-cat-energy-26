@@ -58,8 +58,28 @@
   }
 }
 
-.navigation__picture {
-  height: 100%;
+.navigation__logo-picture {
+  @media (min-width: 768px) {
+    width: 61px;
+    height: 50px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 71px;
+    height: 60px;
+  }
+}
+
+.navigation__logo-text {
+  @media (min-width: 768px) {
+    width: 101px;
+    height: 18px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 118px;
+    height: 22px;
+  }
 }
 
 .navigation__menu {
@@ -70,6 +90,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+  }
+
+  @media (min-width: 1440px) {
     width: 50%;
   }
 }

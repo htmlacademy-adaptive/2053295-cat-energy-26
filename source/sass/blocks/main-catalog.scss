@@ -8,11 +8,12 @@
   @media (min-width: 768px) {
     font-size: 60px;
     line-height: 60px;
-    margin: 0 0 87px;
+    margin: 0 0 88px;
   }
 
   @media (min-width: 1440px) {
     grid-column: 1/-1;
+    margin: 0 0 82px;
   }
 }
 
@@ -21,5 +22,9 @@
 
   @media (min-width: 768px) {
     padding: 36px 0 0;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 34px 0 0;
   }
 }
