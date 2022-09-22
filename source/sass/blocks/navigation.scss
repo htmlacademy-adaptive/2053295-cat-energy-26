@@ -13,7 +13,7 @@
   margin: 0 auto;
 
   @media (min-width: 768px) {
-    padding: 7px calc(12 / 768 * 100vw) 7px 0;
+    padding: 9px 0 7px;
     width: auto;
     margin: 0;
   }
@@ -31,7 +31,7 @@
 
   &_image {
     @media (min-width: 768px) {
-      padding: 6px calc(12 / 768 * 100vw) 8px 0;
+      padding: 6px 9px 8px 0;
     }
 
     @media (min-width: 1440px) {
@@ -40,7 +40,7 @@
   }
 
   &_text {
-    padding: 3px 0 0 0;
+    padding: 2px 0 0 3px;
 
     @media (min-width: 1440px) {
       padding: 3px 0 0;

@@ -11,10 +11,6 @@
 .navigation-header__item {
   list-style-type: none;
 
-  &_center {
-    padding-right: 13px;
-  }
-
   &:last-child {
     position: relative;
   }
@@ -23,7 +19,7 @@
 .navigation-header__button {
   position: relative;
   margin-left: auto;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   padding: 0;
   border: 0;
   width: 24px;
@@ -37,8 +33,7 @@
     position: absolute;
     top: 50%;
     right: 0;
-    width: 24px;
-    height: 2px;
+
     background-color: $Black;
   }
 
@@ -48,10 +43,14 @@
 
   &_on {
     &::before {
+      width: 24px;
+      height: 2px;
       transform: translateY(-50%) rotate(45deg);
     }
 
     &::after {
+      width: 24px;
+      height: 2px;
       transform: translateY(-50%) rotate(-45deg);
     }
   }
@@ -67,6 +66,7 @@
     }
 
     &::after {
+
       content: none;
     }
   }
