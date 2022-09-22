@@ -16,7 +16,7 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__container container">
+    <div class="page-header__container">
       <nav class="navigation">
         <ul class="navigation__header navigation-header">
           <li class="navigation-header__item">
@@ -31,10 +31,10 @@
               </picture>
             </a>
           </li>
-          <li class="navigation-header__item">
+          <li class="navigation-header__item navigation-header__item_center">
             <a class="navigation__logo navigation__logo_text" href="index.html">
               <span class="visually-hidden">
-                Баннер сайта Кэт Энерджи
+                Название сайта Кэт Энерджи
               </span>
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/logo-text.svg">
@@ -44,26 +44,28 @@
             </a>
           </li>
           <li class="navigation-header__item">
-            <button class="navigation-header__button navigation-header__button_off" type="button">
-              <!--navigation-header__button_off - кнопка меню закрыта
-                  navigation-header__button_on - кнопка меню открыта -->
+            <button class="navigation-header__button" type="button">
+              <!-- Класс navigation-header__button_off - отображается меню-бургер (крестик скрыт). -->
+              <!-- Класс navigation-header__button_oт - отображается крестик (меню-бургер скрыто). -->
               <span class="visually-hidden">Меню</span>
             </button>
           </li>
         </ul>
         <ul class="navigation__menu menu">
+          <!-- Класс menu_closed - меню закрыто.  -->
+          <!-- Класс menu_open - меню открыто.  -->
           <li class="menu__item">
-            <a class="menu__link" href="index.html">
+            <a class="menu__link menu__link" href="index.html">
               главная
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link menu__link_active" href="catalog.html">
+            <a class="menu__link menu__link menu__link_active" href="catalog.html">
               каталог продукции
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="form.html">
+            <a class="menu__link menu__link" href="form.html">
               подбор программы
             </a>
           </li>
@@ -586,6 +588,7 @@
       </a>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

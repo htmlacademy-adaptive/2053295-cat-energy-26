@@ -1,6 +1,5 @@
 .menu {
-  @media (max-width: 768px) {
-    // width: 100vw;
+  @media (max-width: 767px) {
     background-color: $White;
     z-index: 5;
     transition-property: left;

@@ -16,7 +16,7 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__container container">
+    <div class="page-header__container">
       <nav class="navigation">
         <ul class="navigation__header navigation-header">
           <li class="navigation-header__item">
@@ -24,17 +24,17 @@
               <span class="visually-hidden">
                 Логотип сайта Кэт Энерджи
               </span>
-               <picture>
+              <picture>
                 <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
                 <img class="navigation__logo-picture" src="img/logo-mobile.svg" alt="Логотип магазина Кэт Энерджи." width="34" height="38">
               </picture>
             </a>
           </li>
-          <li class="navigation-header__item">
+          <li class="navigation-header__item navigation-header__item_center">
             <a class="navigation__logo navigation__logo_text" href="index.html">
               <span class="visually-hidden">
-                Баннер сайта Кэт Энерджи
+                Название сайта Кэт Энерджи
               </span>
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/logo-text.svg">
@@ -44,24 +44,28 @@
             </a>
           </li>
           <li class="navigation-header__item">
-            <button class="navigation-header__button navigation-header__button_on navigation-header__button_off" type="button">
+            <button class="navigation-header__button" type="button">
+              <!-- Класс navigation-header__button_off - отображается меню-бургер (крестик скрыт). -->
+              <!-- Класс navigation-header__button_oт - отображается крестик (меню-бургер скрыто). -->
               <span class="visually-hidden">Меню</span>
             </button>
           </li>
         </ul>
         <ul class="navigation__menu menu">
+          <!-- Класс menu_closed - меню закрыто.  -->
+          <!-- Класс menu_open - меню открыто.  -->
           <li class="menu__item">
-            <a class="menu__link" href="index.html">
+            <a class="menu__link menu__link" href="index.html">
               главная
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="catalog.html">
+            <a class="menu__link menu__link" href="catalog.html">
               каталог продукции
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link menu__link_active" href="form.html">
+            <a class="menu__link menu__link menu__link_active" href="form.html">
               подбор программы
             </a>
           </li>
@@ -244,6 +248,7 @@
       </a>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
